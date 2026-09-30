@@ -1,5 +1,4 @@
 
----
 x-airflow-common:
   &airflow-common
   image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:3.1.7}
@@ -41,7 +40,7 @@ services:
     container_name: airflow-postgres 
     image: postgres:13
     ports:
-      - "1234:5432"
+      - "5432:5432"
     environment:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
@@ -54,6 +53,7 @@ services:
       retries: 5
       start_period: 5s
     restart: always
+    
 
   redis:
     container_name: airflow-redis
@@ -72,6 +72,9 @@ services:
     container_name: airflow-apiserver
     <<: *airflow-common
     command: api-server
+    networks:
+      - default
+      - shared
     ports:
       - "8080:8080"
     healthcheck:
@@ -87,6 +90,7 @@ services:
         condition: service_completed_successfully
     extra_hosts:
       - "host.docker.internal:host-gateway"
+
 
   airflow-scheduler:
     container_name: airflow-scheduler
@@ -274,6 +278,12 @@ services:
       - airflow
     depends_on:
       <<: *airflow-common-depends-on
+
+networks:
+  default:
+  shared:
+    external: true
+    name: Carry-inter-network
 
 volumes:
   postgres-db-volume:
