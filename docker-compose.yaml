@@ -1,0 +1,7 @@
+include:
+  - ./airflow/docker-compose.yaml
+  - ./trino/docker-compose.yaml
+
+networks:
+  default:
+    name: phzai-network 
