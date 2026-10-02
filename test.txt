@@ -1,0 +1,333 @@
+'auto_ru_id': 1133926669
+'url': https://auto.ru/cars/used/sale/bmw/1er/1133926669-f0ca716c/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2022
+'mileage': 35000
+'price': 1750000
+'engine': 1.5л бензин
+'power': 140л.с.
+
+'auto_ru_id': 1134242095
+'url': https://auto.ru/cars/used/sale/bmw/1er/1134242095-8728604f/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2023
+'mileage': 19300
+'price': 1880000
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1132989890
+'url': https://auto.ru/cars/used/sale/bmw/1er/1132989890-46cded25/
+'model_title': BMW 1 серии 135i I (E82/E88) Рестайлинг 2
+'year': 2010
+'mileage': 275000
+'price': 1500000
+'engine': 3.0л бензин
+'power': 306л.с.
+
+'auto_ru_id': 1133861331
+'url': https://auto.ru/cars/used/sale/bmw/1er/1133861331-4c3f5738/
+'model_title': BMW 1 серии 118i II (F20/F21) Рестайлинг 2
+'year': 2018
+'mileage': 133000
+'price': 1600000
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1134242880
+'url': https://auto.ru/cars/used/sale/bmw/1er/1134242880-6e60af21/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2023
+'mileage': 18000
+'price': 2170000
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1160087890
+'url': https://auto.ru/cars/used/sale/bmw/1er/1160087890-3589db74/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2022
+'mileage': 23000
+'price': 1765000
+'engine': 1.5л бензин
+'power': 140л.с.
+
+'auto_ru_id': 1134066573
+'url': https://auto.ru/cars/used/sale/bmw/1er/1134066573-4c1edc42/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2022
+'mileage': 50000
+'price': 1920000
+'engine': 1.5л бензин
+'power': 140л.с.
+
+'auto_ru_id': 1134098032
+'url': https://auto.ru/cars/used/sale/bmw/1er/1134098032-39da4254/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2023
+'mileage': 17595
+'price': 1963000
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1160085608
+'url': https://auto.ru/cars/used/sale/bmw/1er/1160085608-95b1d09f/
+'model_title': BMW 1 серии 116i I (E81/E82/E87/E88)
+'year': 2006
+'mileage': 320000
+'price': 350000
+'engine': 1.6л бензин
+'power': 115л.с.
+
+'auto_ru_id': 1160083992
+'url': https://auto.ru/cars/used/sale/bmw/1er/1160083992-5400ba23/
+'model_title': BMW 1 серии 118i II (F20/F21)
+'year': 2012
+'mileage': 168000
+'price': 1285000
+'engine': 1.6л бензин
+'power': 170л.с.
+
+'auto_ru_id': 1134050830
+'url': https://auto.ru/cars/used/sale/bmw/1er/1134050830-367fe655/
+'model_title': BMW 1 серии 118i III (F40)
+'year': 2022
+'mileage': 35000
+'price': 1850000
+'engine': 1.5л бензин
+'power': 140л.с.
+
+'auto_ru_id': 1131162665
+'url': https://auto.ru/cars/used/sale/bmw/1er/1131162665-685568a3/
+'model_title': BMW 1 серии 118i II (F20/F21) Рестайлинг 2
+'year': 2017
+'mileage': 88600
+'price': 1550000
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1160086330
+'url': https://auto.ru/cars/used/sale/bmw/1er/1160086330-227fd8ae/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2023
+'mileage': 30000
+'price': 1852055
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1133284473
+'url': https://auto.ru/cars/used/sale/bmw/1er/1133284473-37c57622/
+'model_title': BMW 1 серии 116i I (E81/E82/E87/E88) Рестайлинг
+'year': 2010
+'mileage': 202000
+'price': 665000
+'engine': 1.6л бензин
+'power': 115л.с.
+
+'auto_ru_id': 1134133463
+'url': https://auto.ru/cars/used/sale/bmw/1er/1134133463-c13e01b0/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2022
+'mileage': 36000
+'price': 1920000
+'engine': 1.5л бензин
+'power': 140л.с.
+
+'auto_ru_id': 1133096221
+'url': https://auto.ru/cars/used/sale/bmw/1er/1133096221-adad1874/
+'model_title': BMW 1 серии 116d III (F40)
+'year': 2021
+'mileage': 86000
+'price': 2099900
+'engine': 1.5л дизель
+'power': 116л.с.
+
+'auto_ru_id': 1160082273
+'url': https://auto.ru/cars/used/sale/bmw/1er/1160082273-1de07ad8/
+'model_title': BMW 1 серии 120i I (E81/E82/E87/E88) Рестайлинг
+'year': 2008
+'mileage': 320000
+'price': 1399000
+'engine': 2.0л бензин
+'power': 170л.с.
+
+'auto_ru_id': 1134092153
+'url': https://auto.ru/cars/used/sale/bmw/1er/1134092153-dc6e07fb/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2023
+'mileage': 19155
+'price': 1700000
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1160081524
+'url': https://auto.ru/cars/used/sale/bmw/1er/1160081524-604dce46/
+'model_title': BMW 1 серии M140i xDrive II (F20/F21) Рестайлинг 2
+'year': 2019
+'mileage': 96500
+'price': 4350000
+'engine': 3.0л бензин
+'power': 340л.с.
+
+'auto_ru_id': 1160030644
+'url': https://auto.ru/cars/used/sale/bmw/1er/1160030644-8aacdf61/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2022
+'mileage': 43400
+'price': 1615000
+'engine': 1.5л бензин
+'power': 140л.с.
+
+'auto_ru_id': 1134192483
+'url': https://auto.ru/cars/used/sale/bmw/1er/1134192483-bc1c2ec0/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2022
+'mileage': 37600
+'price': 1800000
+'engine': 1.5л бензин
+'power': 140л.с.
+
+'auto_ru_id': 1133984828
+'url': https://auto.ru/cars/used/sale/bmw/1er/1133984828-aa508c04/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2022
+'mileage': 29300
+'price': 1800000
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1134134989
+'url': https://auto.ru/cars/used/sale/bmw/1er/1134134989-fc6359c8/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2022
+'mileage': 21650
+'price': 2135000
+'engine': 1.5л бензин
+'power': 140л.с.
+
+'auto_ru_id': 1134164126
+'url': https://auto.ru/cars/used/sale/bmw/1er/1134164126-d8f12f02/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2023
+'mileage': 28888
+'price': 1850000
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1133747642
+'url': https://auto.ru/cars/used/sale/bmw/1er/1133747642-2246050e/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2023
+'mileage': 35000
+'price': 1893000
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1160084316
+'url': https://auto.ru/cars/used/sale/bmw/1er/1160084316-3ae38cef/
+'model_title': BMW 1 серии 118i II (F20/F21) Рестайлинг 2
+'year': 2018
+'mileage': 98300
+'price': 1998000
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1160081627
+'url': https://auto.ru/cars/used/sale/bmw/1er/1160081627-ac90b95a/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2023
+'mileage': 31000
+'price': 1727009
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1160081392
+'url': https://auto.ru/cars/used/sale/bmw/1er/1160081392-a7d637e5/
+'model_title': BMW 1 серии 118i II (F20/F21) Рестайлинг 2
+'year': 2018
+'mileage': 60000
+'price': 1600000
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1130932519
+'url': https://auto.ru/cars/used/sale/bmw/1er/1130932519-849f0704/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2022
+'mileage': 35000
+'price': 1800000
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1160081509
+'url': https://auto.ru/cars/used/sale/bmw/1er/1160081509-743ad03d/
+'model_title': BMW 1 серии 118i II (F20/F21) Рестайлинг 2
+'year': 2017
+'mileage': 55000
+'price': 1480000
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1160080708
+'url': https://auto.ru/cars/used/sale/bmw/1er/1160080708-04089e6f/
+'model_title': BMW 1 серии 118i II (F20/F21) Рестайлинг 2
+'year': 2019
+'mileage': 127583
+'price': 1900000
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1160078429
+'url': https://auto.ru/cars/used/sale/bmw/1er/1160078429-f2802588/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2022
+'mileage': 43000
+'price': 1490005
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1160078647
+'url': https://auto.ru/cars/used/sale/bmw/1er/1160078647-235ff251/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2022
+'mileage': 46000
+'price': 1530000
+'engine': 1.5л бензин
+'power': 140л.с.
+
+'auto_ru_id': 1160079056
+'url': https://auto.ru/cars/used/sale/bmw/1er/1160079056-3d39da80/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2022
+'mileage': 38000
+'price': 1765000
+'engine': 1.5л бензин
+'power': 140л.с.
+
+'auto_ru_id': 1134227604
+'url': https://auto.ru/cars/used/sale/bmw/1er/1134227604-478fbb0d/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2022
+'mileage': 50760
+'price': 2430000
+'engine': 1.5л бензин
+'power': 136л.с.
+
+'auto_ru_id': 1160078671
+'url': https://auto.ru/cars/used/sale/bmw/1er/1160078671-c2dfc90b/
+'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'year': 2022
+'mileage': 60000
+'price': 1350000
+'engine': 1.5л бензин
+'power': 140л.с.
+
+'auto_ru_id': 1134234467
+'url': https://auto.ru/cars/used/sale/bmw/1er/1134234467-e12390cc/
+'model_title': BMW 1 серии 118i III (F40)
+'year': 2022
+'mileage': 105300
+'price': 2580000
+'engine': 1.5л бензин
+'power': 140л.с.
+
