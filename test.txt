@@ -1,333 +1,927 @@
-'auto_ru_id': 1133926669
-'url': https://auto.ru/cars/used/sale/bmw/1er/1133926669-f0ca716c/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2022
-'mileage': 35000
-'price': 1750000
-'engine': 1.5л бензин
-'power': 140л.с.
+Количество: 37
 
-'auto_ru_id': 1134242095
-'url': https://auto.ru/cars/used/sale/bmw/1er/1134242095-8728604f/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'auto_ru_id': 1134274901
+'url': https://auto.ru/cars/used/sale/bmw/x1/1134274901-cd1d7f95/
+'model_title': BMW X1 Long 20Li sDrive III (U11/U12)
 'year': 2023
-'mileage': 19300
-'price': 1880000
-'engine': 1.5л бензин
-'power': 136л.с.
+'mileage': 27000
+'price': 2959010
+'engine_volume': 1.5 л
+'power': 156 л.с.
+'fuel': бензин
+'body_type': Внедорожник 5 дв.
+'drive': Передний привод
+'transmission': Робот
+'sale_status': На заказ
+'color': Серый
+'complectation': xDrive25Li X Design Package
+'seller': ВАН Авто | Волгоград (Денис)
+'seller_profile_url': https://auto.ru/profile/autoimport_volgograd/
+'seller_verified': True
+'seller_rating': None
+'seller_region': Волгоград
+'seller_address': Волгоград ,  улица Рокоссовского, 62
+'photo_count': 5
+'photo_urls': ['//photo.auto.ru/photo/get-autoru-vos/19815194/YvsuHI3TZlObqVavuHI_mk-WZR48oxFLCPnnEoqluWAsx6L4ROR1Rc4wvCJTB26kXebzhNQrzLA3cimx_RwByOWCJS_gpWbCKKh-oG5EBPByNt9EVwTXAuHExAC3m2Ew156WiszJFBRKcqq5Dao8mKASIUPIfbe98dXjS2vEZuoTHVM/320x240', '//photo.auto.ru/photo/get-autoru-vos/19831563/cyiQn51G92siYqgtbjpBRKEOppQAYUsKRKMnf8-epxO1AJMikUfICkqPWnAxQ0FqF0nyenEVxDcPDwAi61Bmw5D70Ta_BKeOzk3s3zEeas31pSOR0_v4OmJu3jJqTJv6OB9ozQF6oKdXxKidMQcBPS6cdbrAaS7KAm4VRJ5l-dC3SqE/320x240', '//photo.auto.ru/photo/get-autoru-vos/19851294/I-Id468YfogAQiqHCO4VvIIDxT8R9CGeWiWoMeFPCZsU4lPsL-Am0uVxe57JQkOLfA9gmNURgT4in2G_3dS5Ci3SzZZR8zW6FkUPm-WFKsQusvK5zXR296NRs27EOAE2ABlXjf-Z2U-AO0CizCjtweOluqe8cA2C_vXCYDSOrTOHpwU/320x240', '//photo.auto.ru/photo/get-autoru-vos/17981265/dKCYNYv8x2cD-ZO9R0aHsqf1mSBCVf5tu080VvB0hiGZk5wFmWzUgVzy8_ehQVTcvPTi_uEmuovq9gNcL9iEJXmCl6yuz9idgv9DBD1Yd44CXz5Hxjundr1TbjikP-0HiOm4peGm7NiCpGNnBhkBJFH_uBN3hJjTvM0XXEEmuHbduiY/320x240', '//photo.auto.ru/photo/get-autoru-vos/20467659/W7TKih8WuKSSKWzEuAKIbt4to0AJAdTQ4jVch5js0Mrn9BNQkCXV0M1CRlojd1fBx2Hm-AYxdUCxMd13A4M7E5nUM7bagsJBF_liJ3wVKV8c6vwSRXkxBkIetmglptGn311dIl87loNRfSXNaqXaIRS0zfLCladaoSqS287D8T_dRbM/320x240']
+'badges': ['Один владелец', 'На гарантии', 'Лучшее предложение']
 
-'auto_ru_id': 1132989890
-'url': https://auto.ru/cars/used/sale/bmw/1er/1132989890-46cded25/
-'model_title': BMW 1 серии 135i I (E82/E88) Рестайлинг 2
-'year': 2010
-'mileage': 275000
-'price': 1500000
-'engine': 3.0л бензин
-'power': 306л.с.
-
-'auto_ru_id': 1133861331
-'url': https://auto.ru/cars/used/sale/bmw/1er/1133861331-4c3f5738/
-'model_title': BMW 1 серии 118i II (F20/F21) Рестайлинг 2
-'year': 2018
-'mileage': 133000
-'price': 1600000
-'engine': 1.5л бензин
-'power': 136л.с.
-
-'auto_ru_id': 1134242880
-'url': https://auto.ru/cars/used/sale/bmw/1er/1134242880-6e60af21/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2023
-'mileage': 18000
-'price': 2170000
-'engine': 1.5л бензин
-'power': 136л.с.
-
-'auto_ru_id': 1160087890
-'url': https://auto.ru/cars/used/sale/bmw/1er/1160087890-3589db74/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'auto_ru_id': 1134181614
+'url': https://auto.ru/cars/used/sale/bmw/x1/1134181614-55a94ffd/
+'model_title': BMW X1 Long 20Li sDrive II (F48) Рестайлинг
 'year': 2022
+'mileage': 46741
+'price': 2189000
+'engine_volume': 1.5 л
+'power': 140 л.с.
+'fuel': бензин
+'body_type': Внедорожник 5 дв.
+'drive': Передний привод
+'transmission': Робот
+'sale_status': На заказ
+'color': Чёрный
+'complectation': sDrive20Li
+'seller': BLAIS-AUTO
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Тверь
+'seller_address': Тверь ,  улица Хромова, 84
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/16976316/826746fd28f031617ba542121ff80a27/320x240', '//avatars.avto.ru/get-autoru-vos/18049305/c6a4d7708f59ff89dc0d2a6120eba9cf/320x240', '//avatars.avto.ru/get-autoru-vos/20116688/6942eef403ba51dc2ad6c641327c04ee/320x240', '//avatars.avto.ru/get-autoru-vos/20845579/2b8d6418bcfe9e87d5b5808317c07047/320x240', '//avatars.avto.ru/get-autoru-vos/19831563/4c16ea8056bf7163ca56a17db0aeda83/320x240']
+'badges': []
+
+'auto_ru_id': 1134137199
+'url': https://auto.ru/cars/used/sale/bmw/x1/1134137199-19f7a505/
+'model_title': BMW X1 Long 20Li sDrive III (U11/U12)
+'year': 2023
 'mileage': 23000
-'price': 1765000
-'engine': 1.5л бензин
-'power': 140л.с.
+'price': 2700000
+'engine_volume': 1.5 л
+'power': 156 л.с.
+'fuel': бензин
+'body_type': Внедорожник 5 дв.
+'drive': Передний привод
+'transmission': Робот
+'sale_status': На заказ
+'color': Белый
+'complectation': xDrive25Li X Design Package
+'seller': BLAIS-AUTO
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Тверь
+'seller_address': Тверь ,  улица Хромова, 84
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/17435526/c5d06e73a5869f455b519233cbec04ec/320x240', '//avatars.avto.ru/get-autoru-vos/20309075/f6fbecdfa2d8dfce2a1781763f6d64ad/320x240', '//avatars.avto.ru/get-autoru-vos/19851294/0aba8cf9f6276d0391575619fc2e8c7b/320x240', '//avatars.avto.ru/get-autoru-vos/20265681/1c48d4457d034ab7a6249044fed4f910/320x240', '//avatars.avto.ru/get-autoru-vos/20360782/4db2e854d979268c72f721d6e7c44212/320x240']
+'badges': []
 
-'auto_ru_id': 1134066573
-'url': https://auto.ru/cars/used/sale/bmw/1er/1134066573-4c1edc42/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2022
-'mileage': 50000
-'price': 1920000
-'engine': 1.5л бензин
-'power': 140л.с.
-
-'auto_ru_id': 1134098032
-'url': https://auto.ru/cars/used/sale/bmw/1er/1134098032-39da4254/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2023
-'mileage': 17595
-'price': 1963000
-'engine': 1.5л бензин
-'power': 136л.с.
-
-'auto_ru_id': 1160085608
-'url': https://auto.ru/cars/used/sale/bmw/1er/1160085608-95b1d09f/
-'model_title': BMW 1 серии 116i I (E81/E82/E87/E88)
-'year': 2006
-'mileage': 320000
-'price': 350000
-'engine': 1.6л бензин
-'power': 115л.с.
-
-'auto_ru_id': 1160083992
-'url': https://auto.ru/cars/used/sale/bmw/1er/1160083992-5400ba23/
-'model_title': BMW 1 серии 118i II (F20/F21)
-'year': 2012
-'mileage': 168000
-'price': 1285000
-'engine': 1.6л бензин
-'power': 170л.с.
-
-'auto_ru_id': 1134050830
-'url': https://auto.ru/cars/used/sale/bmw/1er/1134050830-367fe655/
-'model_title': BMW 1 серии 118i III (F40)
-'year': 2022
-'mileage': 35000
-'price': 1850000
-'engine': 1.5л бензин
-'power': 140л.с.
-
-'auto_ru_id': 1131162665
-'url': https://auto.ru/cars/used/sale/bmw/1er/1131162665-685568a3/
-'model_title': BMW 1 серии 118i II (F20/F21) Рестайлинг 2
-'year': 2017
-'mileage': 88600
-'price': 1550000
-'engine': 1.5л бензин
-'power': 136л.с.
-
-'auto_ru_id': 1160086330
-'url': https://auto.ru/cars/used/sale/bmw/1er/1160086330-227fd8ae/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2023
-'mileage': 30000
-'price': 1852055
-'engine': 1.5л бензин
-'power': 136л.с.
-
-'auto_ru_id': 1133284473
-'url': https://auto.ru/cars/used/sale/bmw/1er/1133284473-37c57622/
-'model_title': BMW 1 серии 116i I (E81/E82/E87/E88) Рестайлинг
-'year': 2010
-'mileage': 202000
-'price': 665000
-'engine': 1.6л бензин
-'power': 115л.с.
-
-'auto_ru_id': 1134133463
-'url': https://auto.ru/cars/used/sale/bmw/1er/1134133463-c13e01b0/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2022
-'mileage': 36000
-'price': 1920000
-'engine': 1.5л бензин
-'power': 140л.с.
-
-'auto_ru_id': 1133096221
-'url': https://auto.ru/cars/used/sale/bmw/1er/1133096221-adad1874/
-'model_title': BMW 1 серии 116d III (F40)
-'year': 2021
-'mileage': 86000
-'price': 2099900
-'engine': 1.5л дизель
-'power': 116л.с.
-
-'auto_ru_id': 1160082273
-'url': https://auto.ru/cars/used/sale/bmw/1er/1160082273-1de07ad8/
-'model_title': BMW 1 серии 120i I (E81/E82/E87/E88) Рестайлинг
-'year': 2008
-'mileage': 320000
-'price': 1399000
-'engine': 2.0л бензин
-'power': 170л.с.
-
-'auto_ru_id': 1134092153
-'url': https://auto.ru/cars/used/sale/bmw/1er/1134092153-dc6e07fb/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2023
-'mileage': 19155
-'price': 1700000
-'engine': 1.5л бензин
-'power': 136л.с.
-
-'auto_ru_id': 1160081524
-'url': https://auto.ru/cars/used/sale/bmw/1er/1160081524-604dce46/
-'model_title': BMW 1 серии M140i xDrive II (F20/F21) Рестайлинг 2
-'year': 2019
-'mileage': 96500
-'price': 4350000
-'engine': 3.0л бензин
-'power': 340л.с.
-
-'auto_ru_id': 1160030644
-'url': https://auto.ru/cars/used/sale/bmw/1er/1160030644-8aacdf61/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2022
-'mileage': 43400
-'price': 1615000
-'engine': 1.5л бензин
-'power': 140л.с.
-
-'auto_ru_id': 1134192483
-'url': https://auto.ru/cars/used/sale/bmw/1er/1134192483-bc1c2ec0/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2022
-'mileage': 37600
-'price': 1800000
-'engine': 1.5л бензин
-'power': 140л.с.
-
-'auto_ru_id': 1133984828
-'url': https://auto.ru/cars/used/sale/bmw/1er/1133984828-aa508c04/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2022
-'mileage': 29300
-'price': 1800000
-'engine': 1.5л бензин
-'power': 136л.с.
-
-'auto_ru_id': 1134134989
-'url': https://auto.ru/cars/used/sale/bmw/1er/1134134989-fc6359c8/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2022
-'mileage': 21650
-'price': 2135000
-'engine': 1.5л бензин
-'power': 140л.с.
-
-'auto_ru_id': 1134164126
-'url': https://auto.ru/cars/used/sale/bmw/1er/1134164126-d8f12f02/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2023
-'mileage': 28888
-'price': 1850000
-'engine': 1.5л бензин
-'power': 136л.с.
-
-'auto_ru_id': 1133747642
-'url': https://auto.ru/cars/used/sale/bmw/1er/1133747642-2246050e/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2023
-'mileage': 35000
-'price': 1893000
-'engine': 1.5л бензин
-'power': 136л.с.
-
-'auto_ru_id': 1160084316
-'url': https://auto.ru/cars/used/sale/bmw/1er/1160084316-3ae38cef/
-'model_title': BMW 1 серии 118i II (F20/F21) Рестайлинг 2
-'year': 2018
-'mileage': 98300
-'price': 1998000
-'engine': 1.5л бензин
-'power': 136л.с.
-
-'auto_ru_id': 1160081627
-'url': https://auto.ru/cars/used/sale/bmw/1er/1160081627-ac90b95a/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2023
+'auto_ru_id': 1134024961
+'url': https://auto.ru/cars/used/sale/bmw/x7/1134024961-4e9cb374/
+'model_title': BMW X7 40d I (G07) Рестайлинг
+'year': 2025
 'mileage': 31000
-'price': 1727009
-'engine': 1.5л бензин
-'power': 136л.с.
+'price': 13700000
+'engine_volume': 3.0 л
+'power': 340 л.с.
+'fuel': дизель
+'body_type': Внедорожник 5 дв.
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': На заказ
+'color': Серый
+'complectation': xDrive40d M Sport Pro
+'seller': AVENCORE
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Санкт-Петербург
+'seller_address': Санкт-Петербург ,  Кондратьевский проспект, 15к2литЗ
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/15611445/61390b58a5a5ab1e8d07e530f2d33b7d/320x240', '//avatars.avto.ru/get-autoru-vos/4266363/0874824ad1a0e4a016041feb5decae0b/320x240', '//avatars.avto.ru/get-autoru-vos/1969232/7f0abcb99af69d979575854ed1117d18/320x240', '//avatars.avto.ru/get-autoru-vos/20793990/8b0cccd9853b76e68f600b494437ad17/320x240', '//avatars.avto.ru/get-autoru-vos/17783177/d25606bbf49286932b41ecfb2a3db674/320x240']
+'badges': []
 
-'auto_ru_id': 1160081392
-'url': https://auto.ru/cars/used/sale/bmw/1er/1160081392-a7d637e5/
-'model_title': BMW 1 серии 118i II (F20/F21) Рестайлинг 2
-'year': 2018
-'mileage': 60000
-'price': 1600000
-'engine': 1.5л бензин
-'power': 136л.с.
-
-'auto_ru_id': 1130932519
-'url': https://auto.ru/cars/used/sale/bmw/1er/1130932519-849f0704/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2022
-'mileage': 35000
-'price': 1800000
-'engine': 1.5л бензин
-'power': 136л.с.
-
-'auto_ru_id': 1160081509
-'url': https://auto.ru/cars/used/sale/bmw/1er/1160081509-743ad03d/
-'model_title': BMW 1 серии 118i II (F20/F21) Рестайлинг 2
-'year': 2017
-'mileage': 55000
-'price': 1480000
-'engine': 1.5л бензин
-'power': 136л.с.
-
-'auto_ru_id': 1160080708
-'url': https://auto.ru/cars/used/sale/bmw/1er/1160080708-04089e6f/
-'model_title': BMW 1 серии 118i II (F20/F21) Рестайлинг 2
+'auto_ru_id': 1132321128
+'url': https://auto.ru/cars/used/sale/bmw/x3/1132321128-4d228903/
+'model_title': BMW X3 M40d III (G01)
 'year': 2019
-'mileage': 127583
-'price': 1900000
-'engine': 1.5л бензин
-'power': 136л.с.
+'mileage': 87500
+'price': 4900000
+'engine_volume': 3.0 л
+'power': 326 л.с.
+'fuel': дизель
+'body_type': Внедорожник 5 дв.
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': None
+'color': Белый
+'complectation': M40d M Special Edition 21
+'seller': Dmitry
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Москва
+'seller_address': Москва ,  Ленинский проспект, 109
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/17973312/0e1021c0924440fb3003c7d92b8c6ec1/320x240', '//avatars.avto.ru/get-autoru-vos/18139133/be3140d7241671cf8a08061bdf30a4ef/320x240', '//avatars.avto.ru/get-autoru-vos/16467568/8186fabc709382fb17e4a6eaca333082/320x240', '//avatars.avto.ru/get-autoru-vos/13922065/e928982f6a849918e58d8c61361fd86f/320x240', '//avatars.avto.ru/get-autoru-vos/15587868/6f9fe9b81251a96f00d7aedb86a601f4/320x240']
+'badges': ['От собственника']
 
-'auto_ru_id': 1160078429
-'url': https://auto.ru/cars/used/sale/bmw/1er/1160078429-f2802588/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'auto_ru_id': 1160022039
+'url': https://auto.ru/cars/used/sale/bmw/3er/1160022039-56a0fcbd/
+'model_title': BMW 3 серии Long 320Li VII (G2x)
 'year': 2022
-'mileage': 43000
-'price': 1490005
-'engine': 1.5л бензин
-'power': 136л.с.
+'mileage': 49210
+'price': 3200000
+'engine_volume': 2.0 л
+'power': 156 л.с.
+'fuel': бензин
+'body_type': Седан
+'drive': Задний привод
+'transmission': Автомат
+'sale_status': На заказ
+'color': Чёрный
+'complectation': None
+'seller': Антон
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Уфа
+'seller_address': Уфа ,  улица Менделеева, 25
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/16446884/8d2d5c14a8b643b94c3ed8833d550b80/320x240', '//avatars.avto.ru/get-autoru-vos/18150448/65c3c6eae2ade25c669c7aabed953698/320x240', '//avatars.avto.ru/get-autoru-vos/18068962/3eb3452ea4399bb76b149dd8fa3449af/320x240', '//avatars.avto.ru/get-autoru-vos/15453628/331e243a339ade2b1d11e37ccccff064/320x240', '//avatars.avto.ru/get-autoru-vos/20022717/eadb4a51dd80b5719f59a4844b1d2400/320x240']
+'badges': ['Без пробега по РФ']
 
-'auto_ru_id': 1160078647
-'url': https://auto.ru/cars/used/sale/bmw/1er/1160078647-235ff251/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
+'auto_ru_id': 1160022068
+'url': https://auto.ru/cars/used/sale/bmw/x1/1160022068-18f1acf2/
+'model_title': BMW X1 Long 20Li sDrive II (F48) Рестайлинг
 'year': 2022
-'mileage': 46000
-'price': 1530000
-'engine': 1.5л бензин
-'power': 140л.с.
+'mileage': 47154
+'price': 2250000
+'engine_volume': 1.5 л
+'power': 140 л.с.
+'fuel': бензин
+'body_type': Внедорожник 5 дв.
+'drive': Передний привод
+'transmission': Робот
+'sale_status': На заказ
+'color': Белый
+'complectation': sDrive20Li
+'seller': Антон
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Уфа
+'seller_address': Уфа ,  улица Менделеева, 25
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/20140694/f71a64890fc6cdbff9675ee377833be6/320x240', '//avatars.avto.ru/get-autoru-vos/17697421/32b21d2778d3004f8e25424ee6ab8a67/320x240', '//avatars.avto.ru/get-autoru-vos/20035467/c3c24d5aab4a040bb4f1c169bd3cb43d/320x240', '//avatars.avto.ru/get-autoru-vos/20189162/c6f3cf21b6da450c91dcef99b98e4681/320x240', '//avatars.avto.ru/get-autoru-vos/20055049/5f66108862aaeb011ed2c02a817c3ba2/320x240']
+'badges': ['Без пробега по РФ']
 
-'auto_ru_id': 1160079056
-'url': https://auto.ru/cars/used/sale/bmw/1er/1160079056-3d39da80/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2022
-'mileage': 38000
-'price': 1765000
-'engine': 1.5л бензин
-'power': 140л.с.
+'auto_ru_id': 1134239983
+'url': https://auto.ru/cars/used/sale/bmw/3er/1134239983-1c3f1921/
+'model_title': BMW 3 серии Long 320Li VII (G2x) Рестайлинг
+'year': 2023
+'mileage': 29864
+'price': 3040000
+'engine_volume': 2.0 л
+'power': 156 л.с.
+'fuel': бензин
+'body_type': Седан
+'drive': Задний привод
+'transmission': Автомат
+'sale_status': На заказ
+'color': Серый
+'complectation': 320Li M Sport Package
+'seller': Ван Авто Юг
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Ростов-на-Дону
+'seller_address': Ростов-на-Дону ,  улица Текучёва
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/19298886/d60943cb1765e8993523c61a90788cf2/320x240', '//avatars.avto.ru/get-autoru-vos/20694092/f10194140bb7cb89a7550a5b3029e886/320x240', '//avatars.avto.ru/get-autoru-vos/18141476/4f794b719c1f54e6f1ccafc38a00d8be/320x240', '//avatars.avto.ru/get-autoru-vos/19298886/a977017ecedd50e97dfec2ee9bf70408/320x240', '//avatars.avto.ru/get-autoru-vos/20761562/e97329cf8faa635d6acf274d53b6e0ed/320x240']
+'badges': []
 
-'auto_ru_id': 1134227604
-'url': https://auto.ru/cars/used/sale/bmw/1er/1134227604-478fbb0d/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2022
-'mileage': 50760
-'price': 2430000
-'engine': 1.5л бензин
-'power': 136л.с.
+'auto_ru_id': 1133721943
+'url': https://auto.ru/cars/used/sale/bmw/x2/1133721943-ca1ebd67/
+'model_title': BMW X2 xDrive20i II (U10)
+'year': 2025
+'mileage': 4845
+'price': 5970000
+'engine_volume': 2.0 л
+'power': 204 л.с.
+'fuel': бензин
+'body_type': Внедорожник 5 дв.
+'drive': Полный привод
+'transmission': Робот
+'sale_status': На заказ
+'color': Синий
+'complectation': None
+'seller': DA.MOTORS
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Москва
+'seller_address': Москва ,  улица Ивана Франко, 10
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/20180167/73b60cc0e52067265a531082b6d08557/320x240', '//avatars.avto.ru/get-autoru-vos/19700919/a1673d68b9eb29da46486ecf462ed45d/320x240', '//avatars.avto.ru/get-autoru-vos/17833152/62c354eaa16ad3f827347b2cee1d83be/320x240', '//avatars.avto.ru/get-autoru-vos/20315033/cdb9c29950edc9730030bd4cd5071e87/320x240', '//avatars.avto.ru/get-autoru-vos/20315033/7e71e2ba7c436825f488b8c6f0bc6e11/320x240']
+'badges': ['Растаможен, нет ПТС', 'Без пробега по РФ', 'В ПУТИ']
 
-'auto_ru_id': 1160078671
-'url': https://auto.ru/cars/used/sale/bmw/1er/1160078671-c2dfc90b/
-'model_title': BMW 1 серии 120i III (F52) Рестайлинг
-'year': 2022
-'mileage': 60000
-'price': 1350000
-'engine': 1.5л бензин
-'power': 140л.с.
+'auto_ru_id': 1133402155
+'url': https://auto.ru/cars/used/sale/bmw/3er/1133402155-ac19181c/
+'model_title': BMW 3 серии 318d VII (G2x)
+'year': 2019
+'mileage': 105000
+'price': 3290000
+'engine_volume': 2.0 л
+'power': 150 л.с.
+'fuel': дизель
+'body_type': Седан
+'drive': Задний привод
+'transmission': Автомат
+'sale_status': None
+'color': Чёрный
+'complectation': 318d
+'seller': Леонид Воробьев
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Москва
+'seller_address': Москва ,  улица Щорса, 6к1
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/20556383/3eedf9771eb75bd249376e974c311ed9/320x240', '//avatars.avto.ru/get-autoru-vos/20392446/ae2ee4dc36b15835077830f26cbb9722/320x240', '//avatars.avto.ru/get-autoru-vos/17750173/9e6e20b0e2995575b0799bc1824bc14a/320x240', '//avatars.avto.ru/get-autoru-vos/20330248/800003cff8d23f9a896e8f7cb835f1c0/320x240', '//avatars.avto.ru/get-autoru-vos/20055049/31ed69775a0f9fc0f64e95b0e4e9499b/320x240']
+'badges': []
 
-'auto_ru_id': 1134234467
-'url': https://auto.ru/cars/used/sale/bmw/1er/1134234467-e12390cc/
-'model_title': BMW 1 серии 118i III (F40)
+'auto_ru_id': 1134011023
+'url': https://auto.ru/cars/used/sale/bmw/5er/1134011023-cd71abfe/
+'model_title': BMW 5 серии 540d xDrive VIII (G60/G61/G68)
+'year': 2025
+'mileage': 26000
+'price': 10758000
+'engine_volume': 3.0 л
+'power': 303 л.с.
+'fuel': дизель
+'body_type': Седан
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': На заказ
+'color': Чёрный
+'complectation': 540d xDrive M Sport Pro
+'seller': ВАН Авто
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': 5.0
+'seller_region': Москва
+'seller_address': Москва ,  улица Фридриха Энгельса, 46с7
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/19298886/ccaa9201f86219d3321b9d48e0561f4b/320x240', '//avatars.avto.ru/get-autoru-vos/6031413/2c34a8226834de422c24db56e512d47e/320x240', '//avatars.avto.ru/get-autoru-vos/21092119/4f92498093447e63789d7724988e41f9/320x240', '//avatars.avto.ru/get-autoru-vos/2164685/d55dd393d4d67d51d28d977ea45a3798/320x240', '//avatars.avto.ru/get-autoru-vos/1699199/2c56fcff4469603d3f75db67d682d9b4/320x240']
+'badges': []
+
+'auto_ru_id': 1134196294
+'url': https://auto.ru/cars/used/sale/bmw/3er/1134196294-311c163f/
+'model_title': BMW 3 серии 318i VII (G2x) Рестайлинг
+'year': 2023
+'mileage': 35000
+'price': 3450000
+'engine_volume': 2.0 л
+'power': 156 л.с.
+'fuel': бензин
+'body_type': Седан
+'drive': Задний привод
+'transmission': Автомат
+'sale_status': На заказ
+'color': Белый
+'complectation': 318i M Sport
+'seller': БАРС АВТО
+'seller_profile_url': https://auto.ru/profile/jYz3dfmbADXb-cxBnzQF9Q/
+'seller_verified': True
+'seller_rating': None
+'seller_region': Казань
+'seller_address': Казань ,  улица Юлиуса Фучика, 90А
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/19873021/5337a33fa9bce8e17966376ae2c4ce98/320x240', '//avatars.avto.ru/get-autoru-vos/17755365/72e3334ede017a5480424064b64f1f67/320x240', '//avatars.avto.ru/get-autoru-vos/17024389/570f9f4ce3c8b9d6e148fe491da23730/320x240', '//avatars.avto.ru/get-autoru-vos/17672043/bb88e14cfe652a76718fc3534bdcf089/320x240', '//avatars.avto.ru/get-autoru-vos/15404718/9472ebdd98d3f482008aff6eefcbddd7/320x240']
+'badges': ['Без пробега по РФ']
+
+'auto_ru_id': 1134036649
+'url': https://auto.ru/cars/used/sale/bmw/7er/1134036649-75dd7fc2/
+'model_title': BMW 7 серии 740d xDrive VII (G70)
+'year': 2025
+'mileage': 33000
+'price': 12800000
+'engine_volume': 3.0 л
+'power': 286 л.с.
+'fuel': дизель
+'body_type': Седан
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': На заказ
+'color': Серый
+'complectation': 740d xDrive M Sport Pro
+'seller': AVENCORE
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Санкт-Петербург
+'seller_address': Санкт-Петербург ,  Кондратьевский проспект, 15к2литЗ
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/18006848/72e60f5b3b75ecbac6c9687a387345be/320x240', '//avatars.avto.ru/get-autoru-vos/9772983/93459056ee11014d6d4b73697916401c/320x240', '//avatars.avto.ru/get-autoru-vos/18008089/db954852db713c4abf490e65e4bbdd53/320x240', '//avatars.avto.ru/get-autoru-vos/21119147/7116c1a2f86ca137d4d0a5df2a81bdeb/320x240', '//avatars.avto.ru/get-autoru-vos/17636325/7ab0a29dd3c61c191e960b1e1454b710/320x240']
+'badges': ['Без пробега по РФ']
+
+'auto_ru_id': 1133198561
+'url': https://auto.ru/cars/used/sale/bmw/x3/1133198561-baa04fec/
+'model_title': BMW X3 Long 30L xDrive IV (G45/G48)
+'year': 2026
+'mileage': 10
+'price': 6190000
+'engine_volume': 2.0 л
+'power': 258 л.с.
+'fuel': бензин
+'body_type': Внедорожник 5 дв.
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': На заказ
+'color': Белый
+'complectation': xDrive30L Premium M Sport
+'seller': MatesCars
+'seller_profile_url': https://auto.ru/profile/0bmZ0_Rg3YqXo_TKLd9-Ig/
+'seller_verified': True
+'seller_rating': 5.0
+'seller_region': Москва
+'seller_address': Москва ,  Ленинский проспект, 105к2
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/19793268/6a35bd30e9897802fa8d67bb4ee2a7bf/320x240', '//avatars.avto.ru/get-autoru-vos/20673651/624477734fc8bd936f404e628d1fb422/320x240', '//avatars.avto.ru/get-autoru-vos/18139133/44d78154dda1fcb0b20b8877f8532918/320x240', '//avatars.avto.ru/get-autoru-vos/20410536/4186ffec036abd555c27d898f91e1fd2/320x240', '//avatars.avto.ru/get-autoru-vos/20740510/4d2624b42f29118f156ea12a995eb75f/320x240']
+'badges': ['Везем по предоплате 10%', 'Новый автомобиль', 'Максимальная комплектация']
+
+'auto_ru_id': 1134190901
+'url': https://auto.ru/cars/used/sale/bmw/x3/1134190901-c7a3da5c/
+'model_title': BMW X3 30d xDrive II (F25)
+'year': 2014
+'mileage': 198608
+'price': 2200000
+'engine_volume': 3.0 л
+'power': 249 л.с.
+'fuel': дизель
+'body_type': Внедорожник 5 дв.
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': None
+'color': Чёрный
+'complectation': xDrive30d
+'seller': ООО Автосалон КИТ
+'seller_profile_url': https://auto.ru/diler/cars/all/ooo_avtosalon_kit_izhevsk/
+'seller_verified': False
+'seller_rating': None
+'seller_region': Ижевск
+'seller_address': Ижевск ,  ул. 10 лет Октября, 60/1
+'photo_count': 5
+'photo_urls': ['//photo.auto.ru/photo/get-autoru-vos/21074985/m91ZzXGOzGT0VowAkThv4ULSmYcukDDn1LY_pfGSwtLNMpR7h_C3sshqx1_W29WmIfpzdwcMbgzSNiuLiG0A4_JkBHDctdCN3lXY71iXcx0WVtKz7F3hQ7aP7yk_zJ2RILb8JV8mZlErjCtVMMK-zgaR0xSPj8QMLY_hMhXIPYgxRzA/320x240', '//photo.auto.ru/photo/get-autoru-vos/17737319/_tQ2e5jMnDudpAOQG_nrQvqTK-OglLofKvQ7IyFbgwgnDx2SnGvaL4HhSxZykzHQ9EnFvFiNypLSynC60MJdYdqGM719h5HPvzqF81O2muA1htgjdhaULdCLeTzbqplOl039uppWNXjhIshGltWcLDmKQJ57UGAntB64ksyrsVsnYlg/320x240', '//photo.auto.ru/photo/get-autoru-vos/21119147/x3E2aQ1sxkuPLlUKoiHVrXmk6kv_aVghbqJD3fZlTq3HAfOVbH-N_Qsyb0Jq7spfSbjukGiXFptf3ZP2SKXeFDpxGo2CTbQu4aybKBuiJ_j_zvBOHovpaDpsm3Rcug5hCQMkNOVKV-ptoqHXB7-2Evl76nmVnzCaVR3LwdMEN67ATr0/320x240', '//photo.auto.ru/photo/get-autoru-vos/20740510/Q7bZGlei6pOyJZZLLjeQIqZAMw0jBk-Sa2YxsctiOB9vyHSwZPOAzbJwphQHk84_76c_DhzAAzwKR3NHi0LhzX3qeBnyF9EJkePXuyhuUu03ksqPszeN30xjfEiSeNvf6m3R6wIOLfsNJ51TRz23ja0D5KhwoORgpJvcLu3GwFkWl34/320x240', '//photo.auto.ru/photo/get-autoru-vos/19798937/7EgEVgZLjIusVRIs10XFt3IcShV_PURxEoAS5HlbWb9LhOz_P7TtpeCui2-zL8oELuOgCjUlSZiqfawwy22DlxiOWypA5_8vyInLqaL6qCtEvbsnPN1--m_ORH7fpbSsLMKkh1BqBHmLreJQYiqmXI9cVPAb2qCtcyAxwf7z_pHuq78/320x240']
+'badges': []
+
+'auto_ru_id': 1160101695
+'url': https://auto.ru/cars/used/sale/bmw/m8/1160101695-c009b95b/
+'model_title': BMW M8 Gran Coupe Competition I (F91/F92/F93)
+'year': 2020
+'mileage': 45000
+'price': 13000000
+'engine_volume': 4.4 л
+'power': 625 л.с.
+'fuel': бензин
+'body_type': Седан
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': None
+'color': Серый
+'complectation': М8 Competition
+'seller': Магомед
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Санкт-Петербург
+'seller_address': Санкт-Петербург ,  Чкаловский проспект
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/19851294/b860e4d5e7908221b2d4a06c8a3453c7/320x240', '//avatars.avto.ru/get-autoru-vos/19831563/d9f2294ace826045570a4d9461991caa/320x240', '//avatars.avto.ru/get-autoru-vos/20849947/682f6a8cefdc91569a676274bd491b11/320x240', '//avatars.avto.ru/get-autoru-vos/20291570/685ccbd2df0d7a00dac1634d3981f2c0/320x240', '//avatars.avto.ru/get-autoru-vos/21074985/eb9d007447c69343bdcc780d4c420142/320x240']
+'badges': ['От собственника']
+
+'auto_ru_id': 1160101655
+'url': https://auto.ru/cars/used/sale/bmw/x5/1160101655-f397f98b/
+'model_title': BMW X5 40d III (F15)
+'year': 2016
+'mileage': 118000
+'price': 5350000
+'engine_volume': 3.0 л
+'power': 313 л.с.
+'fuel': дизель
+'body_type': Внедорожник 5 дв.
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': None
+'color': Серебристый
+'complectation': xDrive40d
+'seller': Михаил Артёмов
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Воронеж
+'seller_address': Воронеж
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/20487659/10f0b083ec2d4b862673deec619b1da2/320x240', '//avatars.avto.ru/get-autoru-vos/18989329/6be57419e2a0d83dfce8f2caf03b99b4/320x240', '//avatars.avto.ru/get-autoru-vos/20680164/e151ea21f3b268234d984341e9440204/320x240', '//avatars.avto.ru/get-autoru-vos/20392446/984056a84b60f8d8158bd4e6ed635ab2/320x240', '//avatars.avto.ru/get-autoru-vos/19873021/271abae3ead120f9667916e91af60415/320x240']
+'badges': []
+
+'auto_ru_id': 1160101561
+'url': https://auto.ru/cars/used/sale/bmw/x3/1160101561-f374d024/
+'model_title': BMW X3 20i xDrive II (F25)
+'year': 2011
+'mileage': 282004
+'price': 1500000
+'engine_volume': 2.0 л
+'power': 184 л.с.
+'fuel': бензин
+'body_type': Внедорожник 5 дв.
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': None
+'color': Чёрный
+'complectation': xDrive20i
+'seller': Станислав
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Челябинск
+'seller_address': Челябинск ,  улица Сулимова, 49
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/20265681/2d89f3c3f374fae733ae201f030e4416/320x240', '//avatars.avto.ru/get-autoru-vos/20444157/d02f756d71d9f9f52a9ed71e233c6f4d/320x240', '//avatars.avto.ru/get-autoru-vos/19816781/cfb682b4c16781738c95c6d1f1420577/320x240', '//avatars.avto.ru/get-autoru-vos/20849947/b12c1c16030ace74a8cec412eeacc99c/320x240', '//avatars.avto.ru/get-autoru-vos/18170382/7aeab3c849159bdcd14b467ae79e06d4/320x240']
+'badges': []
+
+'auto_ru_id': 1160101560
+'url': https://auto.ru/cars/used/sale/bmw/x1/1160101560-ac977359/
+'model_title': BMW X1 Long 20Li sDrive II (F48) Рестайлинг
 'year': 2022
-'mileage': 105300
-'price': 2580000
-'engine': 1.5л бензин
-'power': 140л.с.
+'mileage': 47533
+'price': 2122000
+'engine_volume': 1.5 л
+'power': 140 л.с.
+'fuel': бензин
+'body_type': Внедорожник 5 дв.
+'drive': Передний привод
+'transmission': Робот
+'sale_status': На заказ
+'color': Белый
+'complectation': sDrive20Li
+'seller': АПК-АзияПодКапотом
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Нижний Новгород
+'seller_address': Нижний Новгород ,  улица Новикова-Прибоя, 4М
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/20346480/38b375d2ee62904eb1d027763cde8395/320x240', '//avatars.avto.ru/get-autoru-vos/21092119/5b44ae197725f36dc299743f19e6d7a1/320x240', '//avatars.avto.ru/get-autoru-vos/20116688/7daf9eb369862eace4333e1006dcc522/320x240', '//avatars.avto.ru/get-autoru-vos/20487659/accaa45a747eba3241fc7c23a036ffdc/320x240', '//avatars.avto.ru/get-autoru-vos/15453628/557dd62e232c741a46d0fb758bd56ffe/320x240']
+'badges': []
+
+'auto_ru_id': 1160101524
+'url': https://auto.ru/cars/used/sale/bmw/8er/1160101524-1f5602e4/
+'model_title': BMW 8 серии 840i I (E31)
+'year': 1996
+'mileage': 81000
+'price': 8300000
+'engine_volume': 4.4 л
+'power': 286 л.с.
+'fuel': бензин
+'body_type': Купе-хардтоп
+'drive': Задний привод
+'transmission': Автомат
+'sale_status': На заказ
+'color': Белый
+'complectation': None
+'seller': ONE OF ONE
+'seller_profile_url': https://auto.ru/profile/one_of_one/
+'seller_verified': True
+'seller_rating': None
+'seller_region': Липецк
+'seller_address': Липецк
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/19798937/713669d46729629e51d474bdab6e99e1/320x240', '//avatars.avto.ru/get-autoru-vos/16995928/8d87da38013f9d5e79d887a224f53716/320x240', '//avatars.avto.ru/get-autoru-vos/17709910/16220057b25939c38455149edfcd7ca9/320x240', '//avatars.avto.ru/get-autoru-vos/17844485/84b7b30e36c20d35a8d7098579e5c19e/320x240', '//avatars.avto.ru/get-autoru-vos/17973062/7f660eb143c8296a263110bc019f650f/320x240']
+'badges': []
+
+'auto_ru_id': 1160101692
+'url': https://auto.ru/cars/used/sale/bmw/x7/1160101692-0c039e6d/
+'model_title': BMW X7 40d I (G07) Рестайлинг
+'year': 2022
+'mileage': 53000
+'price': 11900000
+'engine_volume': 3.0 л
+'power': 340 л.с.
+'fuel': дизель
+'body_type': Внедорожник 5 дв.
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': None
+'color': Серый
+'complectation': xDrive40d
+'seller': Евросиб BMW
+'seller_profile_url': https://auto.ru/diler/cars/all/evrosib_centr_sankt_peterburg_bmw/
+'seller_verified': False
+'seller_rating': None
+'seller_region': Санкт-Петербург
+'seller_address': Санкт-Петербург ,  набережная Обводного канала, дом 72
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/18154113/e577fb2a2ff4591e853a5e2ff210b163/320x240', '//avatars.avto.ru/get-autoru-vos/20394542/132440e03c5473ea8239667345728e8b/320x240', '//avatars.avto.ru/get-autoru-vos/19798937/eb509d3b41bb0acc21b173efc08539cf/320x240', '//avatars.avto.ru/get-autoru-vos/2127587/ecf853fcc203449648dec39da35a94ad/320x240', '//avatars.avto.ru/get-autoru-vos/18986119/8d159a8b8a777e3b78dcc0315cc33a48/320x240']
+'badges': []
+
+'auto_ru_id': 1160101493
+'url': https://auto.ru/cars/used/sale/bmw/x5/1160101493-bb52937a/
+'model_title': BMW X5 40i IV (G05/G18)
+'year': 2021
+'mileage': 74000
+'price': 7800000
+'engine_volume': 3.0 л
+'power': 340 л.с.
+'fuel': бензин
+'body_type': Внедорожник 5 дв.
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': None
+'color': Синий
+'complectation': xDrive40i M Special
+'seller': Игорь
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Санкт-Петербург
+'seller_address': Санкт-Петербург ,  Пулковское шоссе
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/18621059/a56435b143011dcf01781f5163b89867/320x240', '//avatars.avto.ru/get-autoru-vos/18129838/a0321ea6e20e5bb23c166c0a6746bf9f/320x240', '//avatars.avto.ru/get-autoru-vos/17750516/48d1f1266b32a2da64161b25c5d36333/320x240', '//avatars.avto.ru/get-autoru-vos/20673651/1a5e2bfaaf1d4a3b823399265ddd83b0/320x240', '//avatars.avto.ru/get-autoru-vos/20272960/6c4e573d33a19255bb428ec4d9a97937/320x240']
+'badges': ['Один владелец', 'Максимальная комплектация', 'Без окрасов']
+
+'auto_ru_id': 1133891739
+'url': https://auto.ru/cars/used/sale/bmw/x3/1133891739-fd4a1ee7/
+'model_title': BMW X3 20i xDrive III (G01)
+'year': 2018
+'mileage': 70500
+'price': 3500000
+'engine_volume': 2.0 л
+'power': 184 л.с.
+'fuel': бензин
+'body_type': Внедорожник 5 дв.
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': None
+'color': Синий
+'complectation': xDrive20i Urban
+'seller': Avito89164042692
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Москва
+'seller_address': Москва ,  Ходынский бульвар
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/16743792/4cd414611146febe183015d52a6d2e7c/320x240', '//avatars.avto.ru/get-autoru-vos/20181844/323209ee8723a1cf0062f626416eca8e/320x240', '//avatars.avto.ru/get-autoru-vos/20894132/28999414c500b523f00407d27daf806d/320x240', '//avatars.avto.ru/get-autoru-vos/20181844/8be083f797f8570dd47ca4a7cad55474/320x240', '//avatars.avto.ru/get-autoru-vos/20180167/474a7d48c3c4d0e01771c5552871a991/320x240']
+'badges': []
+
+'auto_ru_id': 1134240503
+'url': https://auto.ru/cars/used/sale/bmw/x5/1134240503-25c2723a/
+'model_title': BMW X5 30d IV (G05/G18) Рестайлинг
+'year': 2024
+'mileage': 22000
+'price': 10340000
+'engine_volume': 3.0 л
+'power': 286 л.с.
+'fuel': дизель
+'body_type': Внедорожник 5 дв.
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': None
+'color': Серый
+'complectation': xDrive30d M Sport Pro
+'seller': Гагик
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Новосибирск
+'seller_address': Новосибирск
+'photo_count': 5
+'photo_urls': ['//photo.auto.ru/photo/get-autoru-vos/20961665/vUe1JugVTseo5EPPNvU-Yk_J_sjpG5E5wN5tKTNNOTEk5g1zmr-VPaDpS-TKtgTr_guPwal4mH47cUiVBAhn1HafGbuSik2Z0saaAWKkmPKnfq3y7QLiwJLqGLnFVd2hJLabkYiB0JrgC8oQLyBP4givnwx8Cwu_oRidZ4ql3auU9qo/320x240', '//photo.auto.ru/photo/get-autoru-vos/21116822/vgdUTvYtyyM8hwbSxqgp6oEdZeuwPf62uBGieiUlI8mHNJfnCUxWs6NxNbH2ozW3tzqkoCJnDBL91EMftenOCFwSxf0wyAJgR1pqeVrqJxxEuj2TDaque95WhW_ZztsAhHCzvvChKTNugc1CR_RR3WUQdiqzPZ0Khp6KmfjBm3xnIk4/320x240', '//photo.auto.ru/photo/get-autoru-vos/20961665/HXl_ilDnQ_PXgO54L4q_tg9hhM_LuMRzK_1emVPC8eK2uDW7zKS0-Fv98OkpyxtTYu7a_rovwndIFAU40wKzsMJyi-huG2UJIbj2vjPSIjuW-qprFMQYI9yf7vYq_Vumefl5_ZqFFcLPUX0_28YNZHEgx4NqTcf3gSRAJhSQy06BLDE/320x240', '//photo.auto.ru/photo/get-autoru-vos/20694092/qypW3h3F6AFy1FIN5X2QdoVK5QqTr3ua6tGYA3ECdXu_Cu-FwB59nQ9yDj0IkEAkQwhP1G7Q2UiuvNQVVc_qu14R-x2MMTbEVAMEpQ_pP9-_1WmdX70vKOBF-7102xXFHM2K970sJDB-xR14oOuO7pM7FZb-qplJ9Y0n-b0h4sdTIyE/320x240', '//photo.auto.ru/photo/get-autoru-vos/17709910/8tn-a1FKUtdvsNSTnqLgu3Jf_psbEHrS5-mlASI77CY3Fqw2uSYrjr0wZZlug08pcQf4oKSc_wdOX8jBZ66GPCoO9gXkUhBw-9KEQgX5b7zl36uR1RwtCGW5p12hvq8PtXzThw5O6db2OUm5hb1J9nxMX_Qv3Q16j9uIdzgQY_uPP2o/320x240']
+'badges': ['Без пробега по РФ', 'Торг уместен', 'Обслуживалась у дилера', 'Срочно']
+
+'auto_ru_id': 1160101381
+'url': https://auto.ru/cars/used/sale/bmw/3er/1160101381-585e45ba/
+'model_title': BMW 3 серии 320i VI (F3x)
+'year': 2012
+'mileage': 129000
+'price': 1700000
+'engine_volume': 2.0 л
+'power': 184 л.с.
+'fuel': бензин
+'body_type': Седан
+'drive': Задний привод
+'transmission': Автомат
+'sale_status': None
+'color': Красный
+'complectation': 320i SE
+'seller': Azitos16
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Казань
+'seller_address': Казань ,  улица Абсалямова, 13
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/20656151/f805cf94e812e305e5374e4000c959ce/320x240', '//avatars.avto.ru/get-autoru-vos/19793268/6856aaa6518977beb65db2c8d051221a/320x240', '//avatars.avto.ru/get-autoru-vos/20360782/2be05cfaecb23100fd236a7104c5a88d/320x240', '//avatars.avto.ru/get-autoru-vos/20104625/03de7940117bbf9c6b372bef1fd654bb/320x240', '//avatars.avto.ru/get-autoru-vos/20507677/471f1afda099625a0c641dd818ea7a64/320x240']
+'badges': ['От собственника']
+
+'auto_ru_id': 1160101364
+'url': https://auto.ru/cars/used/sale/bmw/3er/1160101364-c25068e8/
+'model_title': BMW 3 серии 320i IV (E46)
+'year': 1999
+'mileage': 260000
+'price': 825000
+'engine_volume': 2.0 л
+'power': 150 л.с.
+'fuel': бензин
+'body_type': Седан
+'drive': Задний привод
+'transmission': Механика
+'sale_status': None
+'color': Чёрный
+'complectation': None
+'seller': Дмитрий
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Москва
+'seller_address': Москва ,  1-й Покровский проезд, 5
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/16908002/3a3dae002499c766d623778cc1f2553b/320x240', '//avatars.avto.ru/get-autoru-vos/20507677/1515024601dd7197846a49759b240719/320x240', '//avatars.avto.ru/get-autoru-vos/18049305/8e6ccc0fb26111e072a9220c0275c963/320x240', '//avatars.avto.ru/get-autoru-vos/17909659/2cd26ea36944f14f49e98fc9e3c1dd9b/320x240', '//avatars.avto.ru/get-autoru-vos/20116688/b4e0487c6ad802d4f86bd29002a3e316/320x240']
+'badges': []
+
+'auto_ru_id': 1133394444
+'url': https://auto.ru/cars/used/sale/bmw/x3/1133394444-242c5a68/
+'model_title': BMW X3 Long 30L xDrive IV (G45/G48)
+'year': 2025
+'mileage': 4198
+'price': 6500000
+'engine_volume': 2.0 л
+'power': 258 л.с.
+'fuel': бензин
+'body_type': Внедорожник 5 дв.
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': None
+'color': Синий
+'complectation': xDrive30L Premium M Sport
+'seller': Best Auto
+'seller_profile_url': https://auto.ru/diler/cars/all/best_auto_lipeck/
+'seller_verified': False
+'seller_rating': None
+'seller_region': Липецк
+'seller_address': Липецк ,  Универсальный проезд, 1Г
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/18536126/a36572a59419fa384b34e89d16cd033d/320x240', '//avatars.avto.ru/get-autoru-vos/20981853/827c58c7104bcaa6fe55f2edda8d31c4/320x240', '//avatars.avto.ru/get-autoru-vos/16976316/84297ab60ffb9ed3733d84e27fad31eb/320x240', '//avatars.avto.ru/get-autoru-vos/20263483/830f4a15ec433cfbb2f2b1d5b4502ebf/320x240', '//avatars.avto.ru/get-autoru-vos/20315033/3e179de5dbbeccce927e44d87b35cab5/320x240']
+'badges': []
+
+'auto_ru_id': 1133384386
+'url': https://auto.ru/cars/used/sale/bmw/x5/1133384386-45a28855/
+'model_title': BMW X5 40i IV (G05/G18)
+'year': 2019
+'mileage': 161439
+'price': 4600000
+'engine_volume': 3.0 л
+'power': 340 л.с.
+'fuel': бензин
+'body_type': Внедорожник 5 дв.
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': None
+'color': Чёрный
+'complectation': xDrive40i M Special
+'seller': Best Auto
+'seller_profile_url': https://auto.ru/diler/cars/all/best_auto_lipeck/
+'seller_verified': False
+'seller_rating': None
+'seller_region': Липецк
+'seller_address': Липецк ,  Универсальный проезд, 1Г
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/20172247/4f8ce7a8ae71675abbd698ea3611caf6/320x240', '//avatars.avto.ru/get-autoru-vos/20390804/92bb8a56ce3a163b59ed7c616934c05d/320x240', '//avatars.avto.ru/get-autoru-vos/18031053/ae108ade4ec403d7f5047a11a6aa4750/320x240', '//avatars.avto.ru/get-autoru-vos/20656151/cee7a11b8c3b9c54c72ec43928f22977/320x240', '//avatars.avto.ru/get-autoru-vos/20446679/1570ed9d955ea6fdabc315fea8d12f11/320x240']
+'badges': []
+
+'auto_ru_id': 1134231953
+'url': https://auto.ru/cars/used/sale/bmw/x5/1134231953-bcad6843/
+'model_title': BMW X5 M50d IV (G05/G18)
+'year': 2020
+'mileage': 207696
+'price': 4950000
+'engine_volume': 3.0 л
+'power': 400 л.с.
+'fuel': дизель
+'body_type': Внедорожник 5 дв.
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': None
+'color': Чёрный
+'complectation': M50d BMW M 50 Years Special Edition
+'seller': Best Auto
+'seller_profile_url': https://auto.ru/diler/cars/all/best_auto_lipeck/
+'seller_verified': False
+'seller_rating': None
+'seller_region': Липецк
+'seller_address': Липецк ,  Универсальный проезд, 1Г
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/17645331/94d7e7fcc235a79f1541e73430ab1a61/320x240', '//avatars.avto.ru/get-autoru-vos/18986119/4b07146fb2da2a6fd8a5e99b8a019cd6/320x240', '//avatars.avto.ru/get-autoru-vos/15185647/9d96a3e06377f388d9a0674e0748a61c/320x240', '//avatars.avto.ru/get-autoru-vos/17665660/f42bf1b8643b9e3baacc916b40650f22/320x240', '//avatars.avto.ru/get-autoru-vos/17665660/ce8994cf0388713ce49fc0d7acbff773/320x240']
+'badges': []
+
+'auto_ru_id': 1133922781
+'url': https://auto.ru/cars/used/sale/bmw/x7/1133922781-9a2178f9/
+'model_title': BMW X7 40i I (G07) Рестайлинг
+'year': 2022
+'mileage': 62410
+'price': 10500000
+'engine_volume': 3.0 л
+'power': 381 л.с.
+'fuel': бензин
+'body_type': Внедорожник 5 дв.
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': None
+'color': Чёрный
+'complectation': xDrive40i
+'seller': Best Auto
+'seller_profile_url': https://auto.ru/diler/cars/all/best_auto_lipeck/
+'seller_verified': False
+'seller_rating': None
+'seller_region': Липецк
+'seller_address': Липецк ,  Универсальный проезд, 1Г
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/4476899/baedb293e34b26f9ca39d649055978c0/320x240', '//avatars.avto.ru/get-autoru-vos/19792100/71228ce5c978f1014b12aecfdfe46901/320x240', '//avatars.avto.ru/get-autoru-vos/14855693/b694bfef5689c5f4f4ad6b2cb6093422/320x240', '//avatars.avto.ru/get-autoru-vos/18148556/a12a0d67c2a70cdf001b17174f42a78e/320x240', '//avatars.avto.ru/get-autoru-vos/20193191/891fee42e59acb616ec6db024038823f/320x240']
+'badges': []
+
+'auto_ru_id': 1160034476
+'url': https://auto.ru/cars/used/sale/bmw/x1/1160034476-39f56d9b/
+'model_title': BMW X1 16d sDrive II (F48)
+'year': 2019
+'mileage': 121940
+'price': 2390000
+'engine_volume': 1.5 л
+'power': 116 л.с.
+'fuel': дизель
+'body_type': Внедорожник 5 дв.
+'drive': Передний привод
+'transmission': Робот
+'sale_status': None
+'color': Серый
+'complectation': None
+'seller': Best Auto
+'seller_profile_url': https://auto.ru/diler/cars/all/best_auto_lipeck/
+'seller_verified': False
+'seller_rating': None
+'seller_region': Липецк
+'seller_address': Липецк ,  Универсальный проезд, 1Г
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/18068962/e6c9de09ab50db5bc1286d4bf81d03c6/320x240', '//avatars.avto.ru/get-autoru-vos/17711545/3a5e90477fef415c45f5a2b2b383cf86/320x240', '//avatars.avto.ru/get-autoru-vos/19793268/bcad66ae467f41ee2602f622a0a180da/320x240', '//avatars.avto.ru/get-autoru-vos/20894132/069319b76f7b45a8505ebe6f495a4f6f/320x240', '//avatars.avto.ru/get-autoru-vos/21167286/fcf6c7ca3b4cf550ee028d454e7758e9/320x240']
+'badges': []
+
+'auto_ru_id': 1160101196
+'url': https://auto.ru/cars/used/sale/bmw/x2/1160101196-d6662f34/
+'model_title': BMW X2 sDrive18i I (F39)
+'year': 2018
+'mileage': 111000
+'price': 1850000
+'engine_volume': 1.5 л
+'power': 140 л.с.
+'fuel': бензин
+'body_type': Внедорожник 5 дв.
+'drive': Передний привод
+'transmission': Робот
+'sale_status': None
+'color': Белый
+'complectation': None
+'seller': Eliseev19970507
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Улан-Удэ
+'seller_address': Улан-Удэ
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/20694092/b83d52aee533edff5e8c9230b9f750b8/320x240', '//avatars.avto.ru/get-autoru-vos/13922065/39b5de87cd9bfeb618105a90cb1e4495/320x240', '//avatars.avto.ru/get-autoru-vos/20346480/933815bc755e9c8794de50499384f413/320x240', '//avatars.avto.ru/get-autoru-vos/20606978/314c1434f8f3e93ac7223507769d68cc/320x240', '//avatars.avto.ru/get-autoru-vos/18141476/4202231379855c164f29b963802472f2/320x240']
+'badges': []
+
+'auto_ru_id': 1160017420
+'url': https://auto.ru/cars/used/sale/bmw/x1/1160017420-276ee145/
+'model_title': BMW X1 Long 20Li sDrive II (F48) Рестайлинг
+'year': 2021
+'mileage': 62000
+'price': 3000000
+'engine_volume': 1.5 л
+'power': 140 л.с.
+'fuel': бензин
+'body_type': Внедорожник 5 дв.
+'drive': Передний привод
+'transmission': Робот
+'sale_status': None
+'color': Синий
+'complectation': sDrive20Li
+'seller': Константин О.
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Москва
+'seller_address': Москва ,  природный заказник Северный
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/15317912/5cb431d5ad9a7e674f00476768bcab75/320x240', '//avatars.avto.ru/get-autoru-vos/20507677/65f061410dd387a3c0b6efa60f5fdf0f/320x240', '//avatars.avto.ru/get-autoru-vos/17906453/35ce2409eacb2119f3338694dd2aa2d1/320x240', '//avatars.avto.ru/get-autoru-vos/18621059/548529495046c2f62a14f3d54e8e3d24/320x240', '//avatars.avto.ru/get-autoru-vos/18989329/3876b87b8510c8663cc7aabc3985afcd/320x240']
+'badges': ['От собственника']
+
+'auto_ru_id': 1160101160
+'url': https://auto.ru/cars/used/sale/bmw/x6/1160101160-49e20954/
+'model_title': BMW X6 M50d III (G06)
+'year': 2019
+'mileage': 79000
+'price': 7500000
+'engine_volume': 3.0 л
+'power': 400 л.с.
+'fuel': дизель
+'body_type': Внедорожник 5 дв.
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': None
+'color': Серый
+'complectation': M50d BMW M 50 Years Special Edition
+'seller': Максим Б.
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Москва
+'seller_address': Москва ,  Поклонная улица, 9
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/20390804/f2eda3e1df42c8c5bb388f81056ba313/320x240', '//avatars.avto.ru/get-autoru-vos/20341802/8ef48e495bb9706d38baf049ca06da71/320x240', '//avatars.avto.ru/get-autoru-vos/20740510/9fbd5ed1471102678f0b1b94606ddd8d/320x240', '//avatars.avto.ru/get-autoru-vos/20864073/20608f4c78322c14dcdb681b2c963403/320x240', '//avatars.avto.ru/get-autoru-vos/20864073/b5bb40eef672dec4f4d7a4b9b29482da/320x240']
+'badges': ['От собственника']
+
+'auto_ru_id': 1160101071
+'url': https://auto.ru/cars/used/sale/bmw/x1/1160101071-31e9e091/
+'model_title': BMW X1 18i sDrive II (F48) Рестайлинг
+'year': 2020
+'mileage': 125362
+'price': 2499000
+'engine_volume': 1.5 л
+'power': 140 л.с.
+'fuel': бензин
+'body_type': Внедорожник 5 дв.
+'drive': Передний привод
+'transmission': Робот
+'sale_status': None
+'color': Коричневый
+'complectation': sDrive18i
+'seller': Александр Елисеев
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Москва
+'seller_address': Москва ,  квартал № 32, вл17Ас1
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/21092119/50e88e2640d14f54ab3ff31ce776106f/320x240', '//avatars.avto.ru/get-autoru-vos/17750516/31a74a26ca8d319222ceac705c288d17/320x240', '//avatars.avto.ru/get-autoru-vos/15256414/0e8944e877a084451ff191859e53ab08/320x240', '//avatars.avto.ru/get-autoru-vos/17637180/25a1455aa74a13bec2a834f6cc50bf30/320x240', '//avatars.avto.ru/get-autoru-vos/16149001/f0cc4337a7df69e904d841bdaf0fc5e9/320x240']
+'badges': []
+
+'auto_ru_id': 1134239829
+'url': https://auto.ru/cars/used/sale/bmw/x3/1134239829-2f09a28e/
+'model_title': BMW X3 30i xDrive III (G01) Рестайлинг
+'year': 2022
+'mileage': 15000
+'price': 5450000
+'engine_volume': 2.0 л
+'power': 252 л.с.
+'fuel': бензин
+'body_type': Внедорожник 5 дв.
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': None
+'color': Чёрный
+'complectation': xDrive30i Leading M Night
+'seller': Адам
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Нальчик
+'seller_address': Нальчик
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/18141476/86fca622e3313ade3e88f326bf0bbdaf/320x240', '//avatars.avto.ru/get-autoru-vos/2126383/8797d16f32f95a02c92b865b750466f7/320x240', '//avatars.avto.ru/get-autoru-vos/2126383/28d8b146b5f4854687e186f6e0154bf0/320x240', '//avatars.avto.ru/get-autoru-vos/20671634/0ade92b3c03764d38a61d80ca359fcf1/320x240', '//avatars.avto.ru/get-autoru-vos/19298886/2721ba5eb04d28f02e475a8f397fd3f1/320x240']
+'badges': []
+
+'auto_ru_id': 1127736378
+'url': https://auto.ru/cars/used/sale/bmw/5er/1127736378-f53b8163/
+'model_title': BMW 5 серии 530d xDrive VII (G30/G31/G38)
+'year': 2018
+'mileage': 126000
+'price': 4300000
+'engine_volume': 3.0 л
+'power': 249 л.с.
+'fuel': дизель
+'body_type': Седан
+'drive': Полный привод
+'transmission': Автомат
+'sale_status': None
+'color': Чёрный
+'complectation': 530d xDrive
+'seller': Николаевич Роман
+'seller_profile_url': None
+'seller_verified': False
+'seller_rating': None
+'seller_region': Саратов
+'seller_address': Саратов ,  Фрунзенский район
+'photo_count': 5
+'photo_urls': ['//avatars.avto.ru/get-autoru-vos/19831563/4b5f2863a4931d6eeb29ef4ac82dfe8e/320x240', '//avatars.avto.ru/get-autoru-vos/18535762/725863c0c3143a6df4690b79b981dce1/320x240', '//avatars.avto.ru/get-autoru-vos/20291570/c7c176842b310dc46f3150ba70347dc4/320x240', '//avatars.avto.ru/get-autoru-vos/16202224/b4e766b95cab30081ab12954bcaa435e/320x240', '//avatars.avto.ru/get-autoru-vos/20141841/bbb29f34063c6f110e7f66e4b3a3b4eb/320x240']
+'badges': []
 

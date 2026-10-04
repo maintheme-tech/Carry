@@ -4,7 +4,7 @@ from lxml import html
 
 
 def download_page(page, filename):
-    url = f"https://auto.ru/cars/bmw/1er/all/?sort=cr_date-desc&page={page}"
+    url = f"https://auto.ru/cars/bmw/all/?sort=cr_date-desc&page={page}"
 
     headers = {
         "User-Agent": "Mozilla/5.0"
@@ -45,17 +45,8 @@ def extract_ids_in_order(filename):
 
     return ids
 
+from pathlib import Path
 
-snapshots = {
-    1: "page-1.html",
-    2: "page-2-1.html",
-    3: "page-3-1.html",
-}
 
-for snapshot, filename in snapshots.items():
-    ids = extract_ids_in_order(filename)
-
-    print(f"\n=== Снимок {snapshot} ===")
-
-    for position, auto_ru_id in enumerate(ids, start=1):
-        print(f"{position:02d}. {auto_ru_id}")
+for i in range(1, 11):
+    download_page(i, Path(f"parsedPages/a_test-{i}.html"))
