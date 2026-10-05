@@ -1,28 +1,26 @@
-from airflow.sdk import dag, task
 from datetime import datetime
 
+from airflow.sdk import dag, task
+from airflow.sdk import get_current_context
+
+from collector import collect_data
 
 @dag(
-    schedule = None,
-    catchup = False,
-    start_date = datetime(2026, 10, 2)
+    schedule=None,
+    start_date=datetime(2026, 10, 5),
+    catchup=False,
 )
-def test_decorator_dag():
-    
-    @task
-    def generate_numbers():
-        return [10, 20, 30, 40]
-    
-    @task
-    def calculate_sum(nums):
-        return sum(nums)
+def dag_collect_raw_data():
 
     @task
-    def print_result(num):
-        print(f"The sum is {num}")
+    def download_pages():
 
-    
-    print_result(calculate_sum(generate_numbers()))
+        context = get_current_context()
+        params = context["dag_run"].conf
+
+        collect_data(params)
+
+    download_pages()
 
 
-test_dag = test_decorator_dag()
+dag_collect_raw_data = dag_collect_raw_data()
