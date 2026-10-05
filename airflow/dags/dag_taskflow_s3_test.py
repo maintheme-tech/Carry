@@ -1,8 +1,9 @@
-import boto3
 import json
 
-from airflow.sdk import dag, task
 from datetime import datetime
+
+from airflow.sdk import dag, task
+from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 
 
 @dag(
@@ -12,50 +13,15 @@ from datetime import datetime
 )
 def S3_taskflow_test_dag():
 
-    # Подключаемся к S3
-    s3 = boto3.client(
-        "s3",
-        endpoint_url="http://silo-iceberg:9000",
-        aws_access_key_id="minioadmin",
-        aws_secret_access_key="minioadmin",
-        region_name="us-east-1",
-    )
-
-    bucket = "test"
-    key = "numbers.json"
-
     @task
-    def generate_numbers():
-        numbers = list(range(1001))
+    def test_s3():
 
-        # Загружаем HTML в S3
-        s3.put_object(
-            Bucket=bucket,
-            Key=key,
-            Body=json.dumps(numbers),
-            ContentType="application/json",
-        )
+        s3 = S3Hook(aws_conn_id="Silo_S3_connect")
 
-        return f"s3://{bucket}/{key}"
-
-    @task
-    def calculate_stats(S3_path):
-
-        response = s3.get_object(
-                Bucket=bucket,
-                Key=key
-            )
-            
-        data = response["Body"].read()
-
-        numbers = json.loads(data)
-
-        print(numbers)
-    
-        return max(numbers), min(numbers)
+        print(s3.check_for_bucket("raw"))
 
 
-    calculate_stats(generate_numbers())
+    test_s3()
 
 
 S3_taskflow_test_dag = S3_taskflow_test_dag()
