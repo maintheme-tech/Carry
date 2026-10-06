@@ -1,7 +1,7 @@
+import random
 
-# https://www.avito.ru/all/avtomobili/bmw?p=3&s=104
-# https://auto.ru/cars/bmw/all/?sort=cr_date-desc&page=2
-# https://auto.drom.ru/bmw/all/page2/
+from datetime import datetime
+
 
 def generate_params():
 
@@ -11,11 +11,15 @@ def generate_params():
         'drom': "https://auto.drom.ru/{brand}/all/page{page}/"
     }
 
+    car_brands = ['bmw', 'volkswagen', 'vaz', 'audi', 'honda', 'kia', 'lexus', 'hyundai', 'mazda',
+                  'mercedes', 'mitsubishi', 'nissan', 'opel', 'porsche', 'skoda', 'toyota', 'ford']
+
     params = {
-        'url_template': url_templates['autoru'],
-        'brand': 'bmw',
+        'url_template': url_templates['autoru'], # TODO add random choice from url_templates keys
+        'brand': random.choice(car_brands),
         'page_from': 1,
-        'page_to': 10
+        'page_to': random.randint(10, 20),
+        "today": datetime.now().date()
     }
 
     return params
