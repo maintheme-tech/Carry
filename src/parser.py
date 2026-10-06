@@ -13,7 +13,7 @@ def clean_text(value):
     )
 
 
-def parse_listings(content):
+def parse(content):
     tree = html.fromstring(content)
 
     links = tree.xpath(
@@ -36,13 +36,6 @@ def parse_listings(content):
 
         # -------------------------------------------------
         # КАРТОЧКА ОБЪЯВЛЕНИЯ
-        # -------------------------------------------------
-        #
-        # Находим ближайший родительский контейнер:
-        #
-        # ListingItemUniversal-BAZaq ListingItemUniversal-CEMgQ
-        #
-        # Больше не считаем количество parent'ов.
         # -------------------------------------------------
 
         cards = tree.xpath(
@@ -390,7 +383,7 @@ FILE = Path("parsedPages/a_test-1.html")
 with open(FILE, "rb") as f:
     content = f.read()
 
-listings = parse_listings(content)
+listings = parse(content)
 
 for listing in listings:
 
