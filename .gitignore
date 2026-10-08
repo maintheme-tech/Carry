@@ -1,0 +1,7 @@
+venv
+*html
+__pycache__*
+airflow/logs*
+airflow/.env
+trino/silo_persistent_data
+trino/iceberg_catalog_data
