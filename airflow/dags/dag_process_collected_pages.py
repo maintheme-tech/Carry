@@ -32,11 +32,13 @@ def dag_process_collected_pages():
 
         context = get_current_context()
         params = context["dag_run"].conf["params"]
-        run_number = int(context["dag_run"].logical_date.strftime("%Y%m%d%H%M%S%f"))
+        run_number = context["dag_run"].logical_date.strftime("%Y%m%d%H%M%S")
 
         print(f"Processing {file_path}")
 
         listings = transform(file_path, params, run_number)
+
+        return run_number
 
     file_paths = get_file_paths()
     transform_page.expand(file_path=file_paths)
