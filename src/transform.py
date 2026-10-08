@@ -399,7 +399,11 @@ def transform(file_path, params, run_number):
         })
 
 
-    json_content = json.dumps(listings, indent=2)
+    json_content = json.dumps(
+        listings,
+        ensure_ascii=False,
+        indent=2,
+    )
 
     s3.load_string(
         string_data=json_content,

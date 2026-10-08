@@ -18,7 +18,7 @@ def generate_params():
         'url_template': url_templates['autoru'], # TODO add random choice from url_templates keys
         'brand': random.choice(car_brands),
         'page_from': 1,
-        'page_to': 5, #random.randint(10, 20),
+        'page_to': 32,
         "today": str(datetime.now().date())
     }
 
