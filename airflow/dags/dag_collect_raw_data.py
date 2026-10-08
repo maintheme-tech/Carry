@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from airflow.sdk import dag, task, get_current_context
 from airflow.providers.standard.operators.trigger_dagrun import TriggerDagRunOperator
@@ -8,17 +8,20 @@ from parser import collect_data
 
 
 @dag(
-    schedule=None,
+    schedule=timedelta(minutes=20),
     start_date=datetime(2026, 10, 5),
     catchup=False,
 )
 def dag_collect_raw_data():
 
-    @task
+    @task(
+        retries=2,
+        retry_delay=timedelta(seconds=30),
+    )
     def download_pages():
 
         context = get_current_context()
-        run_number = int(context["dag_run"].logical_date.strftime("%Y%m%d%H%M%S%f"))
+        run_number = context["dag_run"].logical_date.strftime("%Y%m%d%H%M%S")
         
         params = generate_params()
 
