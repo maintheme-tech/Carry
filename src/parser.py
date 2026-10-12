@@ -58,11 +58,11 @@ def collect_data(params, run_number):
 
         s3.load_bytes(
             bucket_name=bucket_name,
-            key=f"{data_type}/{data_source}/{brand}/{today}/{run_number}/page-{page}.html",
+            key=f"{data_type}/{data_source}/{today}/{run_number}/page-{page}.html",
             bytes_data=content,
             replace=True,
         )
 
         print("File uploaded")
 
-    return f"{data_type}/{data_source}/{brand}/{today}/{run_number}"
+    return f"{data_type}/{data_source}/{today}/{run_number}"
