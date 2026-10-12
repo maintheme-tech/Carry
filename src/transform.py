@@ -1,4 +1,8 @@
 import json
+import io
+import pyarrow as pa
+import pyarrow.parquet as pq
+import pyarrow.fs as fs
 
 from lxml import html
 from pathlib import Path
@@ -399,18 +403,46 @@ def transform_html(file_path, params, run_number):
         })
 
 
-    json_content = json.dumps(
-        listings,
-        ensure_ascii=False,
-        indent=2,
-    )
+    schema = pa.schema([
+        ("auto_ru_id", pa.string()),
+        ("url", pa.string()),
+        ("model_title", pa.string()),
+        ("year", pa.int32()),
+        ("mileage", pa.int64()),
+        ("price", pa.int64()),
+        ("engine_volume", pa.string()),
+        ("power", pa.string()),
+        ("fuel", pa.string()),
+        ("body_type", pa.string()),
+        ("drive", pa.string()),
+        ("transmission", pa.string()),
+        ("sale_status", pa.string()),
+        ("color", pa.string()),
+        ("complectation", pa.string()),
+        ("seller", pa.string()),
+        ("seller_profile_url", pa.string()),
+        ("seller_verified", pa.bool_()),
+        ("seller_rating", pa.float64()),
+        ("seller_region", pa.string()),
+        ("seller_address", pa.string()),
+        ("photo_count", pa.int32()),
+        ("photo_urls", pa.list_(pa.string())),
+        ("badges", pa.list_(pa.string())),
+    ])
 
-    s3.load_string(
-        string_data=json_content,
-        key= f"{data_type}/{data_source}/{today}/{file_name}.json",
-        bucket_name=f"{bucket_name}",
+    table = pa.Table.from_pylist(listings, schema=schema)
+
+    buffer = io.BytesIO()
+    pq.write_table(table, buffer, compression="snappy")
+    buffer.seek(0)
+
+    s3.load_file_obj(
+        file_obj=buffer,
+        key=f"{data_type}/{data_source}/{today}/{file_name}.parquet",
+        bucket_name=bucket_name,
         replace=True
-    )    
+    )
+  
 
 import s3fs
 import pandas as pd
