@@ -17,7 +17,7 @@ def clean_text(value):
     )
 
 
-def transform(file_path, params, run_number):
+def transform_html(file_path, params, run_number):
 
     url_template = params["url_template"]
     data_source = "auto.ru" # TODO add dynamic data source
@@ -407,9 +407,65 @@ def transform(file_path, params, run_number):
 
     s3.load_string(
         string_data=json_content,
-        key= f"{data_type}/{data_source}/{brand}/{today}/{run_number}/{file_name}.json",
+        key= f"{data_type}/{data_source}/{today}/{file_name}.json",
         bucket_name=f"{bucket_name}",
         replace=True
     )    
 
+import s3fs
+import pandas as pd
 
+def transform_json(json_storage_path, parquet_storage_path):
+
+    s3_hook = S3Hook(aws_conn_id="Silo_S3_connect")
+
+    # 1. Настройка параметров для подключения к локальному S3
+    storage_options = {
+        "key": "minioadmin",
+        "secret": "minioadmin",
+        "client_kwargs": {"endpoint_url": "http://silo-iceberg:9000"}  # Замените на ваш endpoint
+    }
+
+    bucket_name = "data"  # Имя вашего бакета
+    # Путь к папке внутри бакета
+    json_folder = f"s3://{json_storage_path}"
+    output_parquet = f"s3://{parquet_storage_path}"
+
+    # 2. Инициализируем s3fs и находим все JSON файлы
+    fs_s3 = s3fs.S3FileSystem(**storage_options)
+    json_files = [f for f in fs_s3.glob(f"{json_folder}/*.json")]
+
+    dfs = []
+    for file_path in json_files:
+        full_path = f"s3://{file_path}"
+        try:
+            # Пытаемся прочитать как обычный JSON (массив или объект)
+            df = pd.read_json(full_path, storage_options=storage_options)
+        except ValueError:
+            # Если не вышло, пробуем прочитать как JSON Lines (построчный JSON)
+            df = pd.read_json(full_path, storage_options=storage_options, lines=True)
+        
+        # Опционально: переводим сложные вложенные объекты/списки в строки,
+        # чтобы избежать конфликтов типов PyArrow при сохранении в Parquet
+        for col in df.columns:
+            if df[col].apply(lambda x: isinstance(x, (dict, list))).any():
+                df[col] = df[col].astype(str)
+                
+        dfs.append(df)
+
+    if dfs:
+        # 3. Объединяем все файлы. Pandas автоматически сопоставит колонки,
+        # даже если в каких-то файлах часть полей отсутствует
+        merged_df = pd.concat(dfs, ignore_index=True)
+
+        # 4. Сохраняем в один Parquet файл
+        merged_df.to_parquet(
+            output_parquet,
+            storage_options=storage_options,
+            engine="pyarrow",
+            compression="snappy",
+            index=False
+        )
+        print(f"Успешно объединено {len(json_files)} файлов в Parquet!")
+    else:
+        print("Файлы для объединения не найдены.")
