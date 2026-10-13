@@ -3,7 +3,7 @@ from datetime import datetime
 from airflow.sdk import dag, task, get_current_context
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 
-from transform import transform_html, transform_json
+from parse import parse_listings
 
 
 @dag(
@@ -36,7 +36,7 @@ def dag_process_collected_pages():
 
         print(f"Processing {file_path}")
 
-        transform(file_path, params, run_number)
+        parse_listings(file_path, params, run_number)
 
         return run_number
 
