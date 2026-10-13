@@ -1,3 +1,5 @@
+drop table autoru_stg.stg_autoru_listings;
+
 CREATE TABLE hive.autoru_stg.stg_autoru_listings (
     auto_ru_id          VARCHAR,
     url                 VARCHAR,
@@ -22,9 +24,11 @@ CREATE TABLE hive.autoru_stg.stg_autoru_listings (
     seller_address      VARCHAR,
     photo_count         BIGINT,
     photo_urls          ARRAY(VARCHAR),
-    badges              ARRAY(VARCHAR)
+    badges              ARRAY(VARCHAR),
+    value_day           DATE
 )
 WITH (
     format = 'PARQUET',
-    external_location = 's3://data/prepared_parquet/auto.ru/2026-10-12/'
+    external_location = 's3://data/prepared_parquet/auto.ru/',
+    partitioned_by = ARRAY['value_day']
 );
