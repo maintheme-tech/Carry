@@ -67,4 +67,4 @@ def ndjson_to_parquet(s3, bucket, source_prefix, target_key):
         replace=True,
     )
 
-    print(f'{target_key} successfully loaded')
+    print(f'{bucket}/{target_key} successfully loaded')
