@@ -4,20 +4,53 @@ from lxml import html
 
 
 def download_page(page, filename):
-    url = f"https://auto.ru/cars/bmw/all/?sort=cr_date-desc&page={page}"
+    import sys
+    import ssl
+    import requests
+    import urllib3
+
+
+    print("=== ENVIRONMENT ===")
+    print("Python:", sys.version)
+    print("OpenSSL:", ssl.OPENSSL_VERSION)
+    print("requests:", requests.__version__)
+    print("urllib3:", urllib3.__version__)
+
+    print()
+    print("=== PROXY ENV ===")
+
+    import os
+
+    for key in [
+        "HTTP_PROXY",
+        "HTTPS_PROXY",
+        "ALL_PROXY",
+        "http_proxy",
+        "https_proxy",
+        "all_proxy",
+    ]:
+        print(key, "=", os.environ.get(key))
+
+
+    print()
+    print("=== REQUEST ===")
+
+    url = "https://auto.ru/cars/bmw/all/?sort=cr_date-desc"
 
     headers = {
-        "User-Agent": "Mozilla/5.0"
+        "User-Agent": "Mozilla/5.0",
     }
 
-    res = requests.get(url, headers=headers)
+    response = requests.get(
+        url,
+        headers=headers,
+        allow_redirects=False,
+    )
 
-    print("URL:", url)
-
-    with open(filename, "wb") as f:
-        f.write(res.content)
-
-    return res.content
+    print("status:", response.status_code)
+    print("url:", response.url)
+    print("location:", response.headers.get("Location"))
+    print("content-type:", response.headers.get("Content-Type"))
 
 from lxml import html
 
@@ -48,5 +81,5 @@ def extract_ids_in_order(filename):
 from pathlib import Path
 
 
-for i in range(1, 11):
-    download_page(i, Path(f"parsedPages/a_test-{i}.html"))
+for i in range(1, 2):
+    download_page(i, Path(f"parsedPages/c_test-{i}.html"))

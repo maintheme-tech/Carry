@@ -2,9 +2,6 @@ from airflow.sdk import dag, task
 
 from datetime import datetime
 
-from transform import transform_json
-
-
 @dag(
     schedule=None,
     start_date=datetime(2026,10,7),
