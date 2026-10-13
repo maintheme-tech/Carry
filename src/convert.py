@@ -1,8 +1,9 @@
 import io
 import json
-
 import pyarrow as pa
 import pyarrow.parquet as pq
+
+from datetime import date
 
 # ---------------------------------------------------------------------------
 # Схема Parquet (зафиксирована, чтобы Trino видел стабильные типы)
@@ -33,15 +34,15 @@ SCHEMA = pa.schema([
     ("photo_count", pa.int32()),
     ("photo_urls", pa.list_(pa.string())),
     ("badges", pa.list_(pa.string())),
+    ("value_day", pa.date32()),
 ])
 
 
-def ndjson_to_parquet(s3, bucket, source_prefix, target_key):
+def ndjson_to_parquet(s3, bucket, source_prefix, target_key, value_day):
 
     keys = s3.list_keys(bucket_name=bucket, prefix=source_prefix)
 
     print('Started conversion')
-
     records = []
     for key in keys:
         obj = s3.get_key(key=key, bucket_name=bucket)
@@ -50,21 +51,24 @@ def ndjson_to_parquet(s3, bucket, source_prefix, target_key):
             line = line.strip()
             if line:
                 records.append(json.loads(line))
-    
-    print('Conversion finished')
 
     print('Started parquet generation')
+
+    d = date.fromisoformat(value_day)
+    for rec in records:
+        rec["value_day"] = d
+
     table = pa.Table.from_pylist(records, schema=SCHEMA)
 
     buf = io.BytesIO()
     pq.write_table(table, buf, compression="snappy")
     buf.seek(0)
 
+    print(f'Loading {bucket}/{target_key}...')
     s3.load_bytes(
         bytes_data=buf.getvalue(),
         key=target_key,
         bucket_name=bucket,
         replace=True,
     )
-
-    print(f'{bucket}/{target_key} successfully loaded')
+    print(f'File {bucket}/{target_key} successfully loaded')
