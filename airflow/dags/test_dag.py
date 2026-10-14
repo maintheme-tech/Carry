@@ -2,6 +2,9 @@ from airflow.sdk import dag, task
 
 from datetime import datetime
 
+from airflow.providers.trino.hooks.trino import TrinoHook
+
+
 @dag(
     schedule=None,
     start_date=datetime(2026,10,7),
@@ -10,11 +13,18 @@ from datetime import datetime
 def test_dag():
 
     @task
-    def merge_json(json_storage_path, parquet_file_location):
+    def sync_partitions():
+
+        trino = TrinoHook(trino_conn_id='Trino_connect')
         
-        transform_json(json_storage_path, parquet_file_location)
+        trino.run(sql="""
+            CALL hive.system.sync_partition_metadata(
+                schema_name => 'autoru_stg',
+                table_name  => 'stg_autoru_listings',
+                mode        => 'FULL'
+            )
+        """)
 
-
-    merge_json('data/prepared/auto.ru/2026-10-10', f'data/warehouse/raw/{str(datetime.now().date())}.parquet')
+    sync_partitions()
 
 test_dag = test_dag()
