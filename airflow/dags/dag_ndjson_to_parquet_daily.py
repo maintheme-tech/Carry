@@ -44,8 +44,8 @@ def dag_ndjson_to_parquet_daily():
         
         trino.run(sql="""
             CALL hive.system.sync_partition_metadata(
-                schema_name => 'autoru_stg',
-                table_name  => 'stg_autoru_listings',
+                schema_name => 'autoru_raw',
+                table_name  => 'raw_autoru_listings',
                 mode        => 'FULL'
             )
         """)
