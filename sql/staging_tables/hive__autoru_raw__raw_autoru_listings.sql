@@ -2,10 +2,7 @@ drop table autoru_raw.raw_autoru_listings;
 CREATE TABLE hive.autoru_raw.raw_autoru_listings (
     auto_ru_id          VARCHAR,
     url                 VARCHAR,
-    #model_title         VARCHAR,
-    brand               VARCHAR,
-    model               VARCHAR
-    #
+    model_title         VARCHAR,
     year                BIGINT,
     mileage             BIGINT,
     price               BIGINT,
