@@ -1,4 +1,4 @@
-drop table iceberg.autoru_stg.stg_autoru_listings;
+DROP TABLE iceberg.autoru_stg.stg_autoru_listings;
 CREATE TABLE iceberg.autoru_stg.stg_autoru_listings (
     auto_ru_id          BIGINT,
     url                 VARCHAR,
@@ -7,7 +7,8 @@ CREATE TABLE iceberg.autoru_stg.stg_autoru_listings (
     mileage             BIGINT,
     price               BIGINT,
     engine_volume       DOUBLE, 
-    power               ARRAY(VARCHAR),
+    power_hp            VARCHAR,        
+    power_kw            VARCHAR,
     fuel                VARCHAR,
     body_type           VARCHAR,
     drive               VARCHAR,
