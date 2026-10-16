@@ -81,5 +81,7 @@ def extract_ids_in_order(filename):
 from pathlib import Path
 
 
-for i in range(1, 2):
-    download_page(i, Path(f"parsedPages/c_test-{i}.html"))
+import pendulum
+
+print(pendulum.now('UTC'))
+print()
