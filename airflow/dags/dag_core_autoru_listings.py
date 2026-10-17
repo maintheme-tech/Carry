@@ -12,7 +12,8 @@ local_tz = pendulum.timezone("Europe/Moscow")
 @dag(
     schedule=None,
     start_date=datetime(2026, 10, 15),
-    catchup=False
+    catchup=False,
+    template_searchpath='/opt/airflow/include'
 )
 def dag_core_autoru_listings():
 
@@ -25,7 +26,7 @@ def dag_core_autoru_listings():
         p_source_table = 'raw_autoru_listings',
         p_target_schema = 'iceberg.autoru_stg',
         p_target_table = 'stg_autoru_listings',
-        p_sql_query = "",
+        p_sql_query = "iceberg__autoru_stg__stg_autoru_listings.sql",
         p_as_of_day = pendulum.now('Europe/Moscow').start_of('second'),
         p_drop_duplicates = False,
         p_gather_stats = True
