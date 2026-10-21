@@ -15,8 +15,7 @@ def test_dag():
     @task
     def test_task(**context):
 
-
-        print(context['logical_date'].in_timezone('Europe/Moscow').to_date_string())
+        print(f'run_id = {context['run_id']}, task = {context['task']}, task_instance = {context['task_instance']},ti = {context['ti']}, dag_run = {context['dag_run']}' )
 
 
     test_task()
