@@ -1,0 +1,1 @@
+create schema iceberg.autoru_stg;
