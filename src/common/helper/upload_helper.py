@@ -12,10 +12,19 @@ class LoadTableHelper:
         self.table_name = p_table_name
 
     def drop_duplicates(self):
-        return self.hook + self.schema_name
+        return ...
 
     def get_table_constraints(self):
         return ...
 
     def gather_table_stats(self):
+        return ...
+
+    def check_empty_source(self, schema_name, table_name):
+        return ...
+
+    def collect_table_attributes_info(self):
+        return ...
+    
+    def generate_merge_statement(self):
         return ...
