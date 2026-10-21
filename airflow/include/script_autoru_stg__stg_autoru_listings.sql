@@ -1,4 +1,4 @@
-TRUNCATE TABLE {self.target_schema}.{self.target_table}
+TRUNCATE TABLE {self.target_schema}.{self.target_table};
 INSERT INTO {self.target_schema}.{self.target_table} (
                 auto_ru_id,
                 url,
@@ -85,4 +85,4 @@ INSERT INTO {self.target_schema}.{self.target_table} (
                 value_day,
                 CAST('{self.as_of_day}' AS TIMESTAMP(0) WITH TIME ZONE) AS as_of_day
             FROM {self.source_schema}.{self.source_table}
-            WHERE value_day = DATE '{value_day}';
+            WHERE value_day = DATE '{self.value_day}';
