@@ -4,14 +4,18 @@ class LoadTableHelper:
     def __init__(
         self,
         p_hook,
-        p_schema_name,
-        p_table_name
+        p_source_schema,
+        p_source_table,
+        p_target_schema,
+        p_target_table,
+        p_as_of_day
     ):
         self.hook = p_hook
         self.source_schema = p_source_schema
         self.source_table = p_source_table
         self.target_schema = p_target_schema
         self.target_table = p_target_table
+        self.as_of_day = p_as_of_day
 
 
     def drop_duplicates(self):
@@ -23,7 +27,7 @@ class LoadTableHelper:
     def gather_table_stats(self):
         return ...
 
-    def check_empty_source(self, schema_name, table_name):
+    def check_empty_source(self):
         return ...
 
     def get_columns_metadata(self):
@@ -63,6 +67,8 @@ class LoadTableHelper:
         insert_values = ", ".join(
             f"source.{column_name}"
             for column_name in insert_fields
+            if column_name != 'as_of_day'
+            else self.as_of_day
         )
 
         merge_statement = f'''
