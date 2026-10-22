@@ -4,14 +4,13 @@ from common.helper.upload_helper import LoadTableHelper
 
 class DeltaLoaderOperator(BaseOperator):
 
-    template_fields = ('sql_query', 'value_day', 'job_id') #'source_schema', 'source_table', 'target_schema', 'target_table', 'as_of_day'
+    template_fields = ('value_day', 'job_id', 'sql_query') #'source_schema', 'source_table', 'target_schema', 'target_table', 'as_of_day'
 
     template_ext = ('.sql',)
 
     def __init__(
         self,
         p_hook,
-        # p_dag_name,
         p_job_id,
         p_source_schema,
         p_source_table,
@@ -26,7 +25,6 @@ class DeltaLoaderOperator(BaseOperator):
     ):
         super().__init__(**kwargs)
         self.hook = p_hook
-        # self.dag_name = p_dag_name
         self.job_id = p_job_id
         self.source_schema = p_source_schema
         self.source_table = p_source_table
@@ -39,7 +37,14 @@ class DeltaLoaderOperator(BaseOperator):
         self.gather_stats = p_gather_stats
 
     def execute(self, context):
-        helper = LoadTableHelper(123, 123, 123)
+        helper = LoadTableHelper(
+            p_hook=self.hook,
+            p_source_schema=self.source_schema,
+            p_source_table=self.source_table,
+            p_target_schema=self.target_schema,
+            p_target_table=self.target_table,
+            p_as_of_day=self.as_of_day
+        )
 
         if self.drop_duplicates:
             self.log.info('Start drop_duplicates()')

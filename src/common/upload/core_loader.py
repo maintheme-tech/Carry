@@ -48,6 +48,6 @@ class LoadCoreTableOperator(BaseOperator):
             self.log.info('End drop_duplicates()')
 
         self.log.info('Generating merge statement')
-        merge_statement = helper.generate_merge_statement(self.as_of_day)
+        merge_statement = helper.generate_merge_statement()
 
         self.hook.run(sql=merge_statement)
