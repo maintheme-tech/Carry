@@ -74,6 +74,6 @@ VALUES
     ('autoru_core', 'core_autoru_actual_listings', 'photo_urls',         24,  'ARRAY(VARCHAR)',              FALSE, TRUE,  FALSE, TRUE, 'Список URL фотографий'),
     ('autoru_core', 'core_autoru_actual_listings', 'badges',             25,  'ARRAY(VARCHAR)',              FALSE, TRUE,  FALSE, TRUE, 'Список бейджей объявления'),
     ('autoru_core', 'core_autoru_actual_listings', 'value_day',          26,  'DATE',                        FALSE, FALSE, TRUE,  TRUE, 'Дата актуальности записи'),
-    ('autoru_core', 'core_autoru_actual_listings', 'as_of_day',          27,  'TIMESTAMP(0) WITH TIME ZONE', FALSE, TRUE,  FALSE, TRUE, 'Дата и время вставки записи в хранилище'),
+    ('autoru_core', 'core_autoru_actual_listings', 'as_of_day',          27,  'TIMESTAMP(0) WITH TIME ZONE', FALSE, FALSE,  FALSE, TRUE, 'Дата и время вставки записи в хранилище'),
     ('autoru_core', 'core_autoru_actual_listings', 'job_insert',         28,  'BIGINT',                     FALSE, FALSE, FALSE, TRUE, 'Run ID DAG, впервые вставившего запись'),
     ('autoru_core', 'core_autoru_actual_listings', 'job_update',         29,  'BIGINT',                     FALSE, TRUE,  FALSE, TRUE, 'Run ID DAG, последним обновившего запись');
