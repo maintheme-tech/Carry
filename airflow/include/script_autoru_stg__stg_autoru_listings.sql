@@ -26,7 +26,9 @@ INSERT INTO {self.target_schema}.{self.target_table} (
                 photo_urls,
                 badges,
                 value_day,
-                as_of_day
+                as_of_day,
+                job_insert,
+                job_update
             )
             SELECT
                 TRY_CAST(auto_ru_id AS BIGINT) AS auto_ru_id,
