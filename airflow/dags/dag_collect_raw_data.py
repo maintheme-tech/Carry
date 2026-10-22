@@ -18,9 +18,8 @@ def dag_collect_raw_data():
         retries=2,
         retry_delay=timedelta(seconds=30),
     )
-    def task_download_pages():
+    def task_download_pages(**context):
 
-        context = get_current_context()
         run_number = context["dag_run"].logical_date.strftime("%Y%m%d%H%M%S")
         
         params = generate_params()
@@ -36,7 +35,7 @@ def dag_collect_raw_data():
         task_id="trigger__dag_process_collected_pages",
         trigger_dag_id="dag_process_collected_pages",
         conf=task_download_pages(),
-)
+    )
 
 
 dag_collect_raw_data = dag_collect_raw_data()
