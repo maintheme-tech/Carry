@@ -83,6 +83,8 @@ INSERT INTO {self.target_schema}.{self.target_table} (
                 photo_urls,
                 badges,
                 value_day,
-                CAST('{self.as_of_day}' AS TIMESTAMP(0) WITH TIME ZONE) AS as_of_day
+                CAST('{self.as_of_day}' AS TIMESTAMP(0) WITH TIME ZONE) AS as_of_day,
+                {self.job_id} as job_insert,
+                {self.job_id} as job_update
             FROM {self.source_schema}.{self.source_table}
             WHERE value_day = DATE '{self.value_day}';

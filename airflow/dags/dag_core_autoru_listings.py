@@ -38,6 +38,7 @@ def dag_core_autoru_listings():
         p_sql_query = "script_autoru_stg__stg_autoru_listings.sql",
         p_value_day = format_value_day(),
         p_as_of_day = pendulum.now('Europe/Moscow').start_of('second'),
+        p_job_id = int(context['logical_date'].strftime('%Y%m%d%H%M%S')),
         p_drop_duplicates = False,
         p_gather_stats = True
     )
