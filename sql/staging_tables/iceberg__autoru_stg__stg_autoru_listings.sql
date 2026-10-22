@@ -1,5 +1,5 @@
 DROP TABLE iceberg.autoru_stg.stg_autoru_listings;
-CREATE TABLE iceberg.autoru_stg.stg_autoru_listings (
+CREATE OR REPLACE TABLE iceberg.autoru_stg.stg_autoru_listings (
     auto_ru_id          BIGINT,
     url                 VARCHAR,
     model_title         VARCHAR, -- need to split later
@@ -26,7 +26,9 @@ CREATE TABLE iceberg.autoru_stg.stg_autoru_listings (
     photo_urls          ARRAY(VARCHAR),
     badges              ARRAY(VARCHAR),
     value_day           DATE,
-    as_of_day           TIMESTAMP(0) WITH TIME ZONE
+    as_of_day           TIMESTAMP(0) WITH TIME ZONE,
+    job_insert          BIGINT,
+    job_update          BIGINT
 )
 WITH (
     format = 'PARQUET'
