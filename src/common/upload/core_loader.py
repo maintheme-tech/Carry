@@ -48,17 +48,18 @@ class LoadCoreTableOperator(BaseOperator):
             helper.drop_duplicates()
             self.log.info('End drop_duplicates()')
     
-        composite_key_attributes, attributes_to_update, attributes_to_insert = helper.collect_table_attributes_info(self.target_schema, self.target_table)
+        primary_key_attributes, attributes_to_update, attributes_to_insert = helper.collect_table_attributes_info(self.target_schema, self.target_table)
 
-        self.log.info(f'Obtained table\'s composite key: {*composite_key_attributes}')
+        self.log.info(f'Obtained table\'s key: {*primary_key_attributes}')
 
         self.log.info('Generating merge statement')
-        self.hook.run(helper.generate_merge_statement(
-                self.source_schema, self.source_table,
-                self.target_schema, self.target_table,
-                composite_key_attributes,
-                attributes_to_update,
-                attributes_to_insert,
-                self.job_id
-            )
-        )
+        merge_statement = helper.generate_merge_statement(
+                                self.source_schema, self.source_table,
+                                self.target_schema, self.target_table,
+                                composite_key_attributes,
+                                attributes_to_update,
+                                attributes_to_insert,
+                                self.job_id
+                            )
+
+        self.hook.run(sql=merge_statement)

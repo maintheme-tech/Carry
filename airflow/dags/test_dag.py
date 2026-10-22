@@ -12,11 +12,12 @@ import pendulum
 )
 def test_dag():
 
+    hook = TrinoHook(trino_conn_id="Trino_connect")
+
     @task
     def test_task(**context):
 
-        print(f'run_id = {context['run_id']}, task = {context['task']}, task_instance = {context['task_instance']},ti = {context['ti']}, dag_run = {context['dag_run']}' )
-
+        print(int(context["logical_date"].strftime("%Y%m%d%H%M%S")))
 
     test_task()
 
