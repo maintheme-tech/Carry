@@ -4,7 +4,7 @@ from common.helper.upload_helper import LoadTableHelper
 
 class DeltaLoaderOperator(BaseOperator):
 
-    template_fields = ('sql_query', 'value_day') #'source_schema', 'source_table', 'target_schema', 'target_table', 'as_of_day'
+    template_fields = ('sql_query', 'value_day', 'job_id') #'source_schema', 'source_table', 'target_schema', 'target_table', 'as_of_day'
 
     template_ext = ('.sql',)
 
@@ -12,7 +12,7 @@ class DeltaLoaderOperator(BaseOperator):
         self,
         p_hook,
         # p_dag_name,
-        # p_job_id,
+        p_job_id,
         p_source_schema,
         p_source_table,
         p_target_schema,
@@ -27,7 +27,7 @@ class DeltaLoaderOperator(BaseOperator):
         super().__init__(**kwargs)
         self.hook = p_hook
         # self.dag_name = p_dag_name
-        # self.job_id = p_job_id
+        self.job_id = p_job_id
         self.source_schema = p_source_schema
         self.source_table = p_source_table
         self.target_schema = p_target_schema
