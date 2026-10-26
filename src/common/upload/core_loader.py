@@ -44,7 +44,7 @@ class LoadCoreTableOperator(BaseOperator):
 
         if self.drop_duplicates:
             self.log.info('Start drop_duplicates()')
-            helper.drop_duplicates()
+            helper.drop_source_duplicates()
             self.log.info('End drop_duplicates()')
 
         self.log.info('Generating merge statement')

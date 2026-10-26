@@ -21,11 +21,27 @@ class LoadTableHelper:
         self.logger = logging.getLogger(__name__)
 
 
-    def drop_duplicates(self):
-        return ...
+    def drop_source_duplicates(self):
+        columns_metadata = self.get_columns_metadata()
 
-    def get_table_constraints(self):
-        return ...
+        target_keys = [d['column_name'] for d in columns_metadata if d['primary_key_flag']]
+        merge_condition = "\n            AND ".join(
+            f"target.{column_name} = source.{column_name}"
+            for column_name in target_keys
+        )
+        target_keys = ", ".join(target_keys)
+
+        self.hook.run(sql=f'''
+        MERGE INTO {self.source_schema}.{self.source_table} as target
+        USING (
+            SELECT {target_keys},
+                ROW_NUMBER() OVER (PARTITION BY {target_keys}) as rn
+            FROM {self.source_schema}.{self.source_table}
+        ) as source
+        ON {merge_condition}
+        AND source.rn > 1
+        WHEN MATCHED THEN DELETE
+        ''')
 
     def gather_table_stats(self):
         return ...
@@ -89,3 +105,5 @@ class LoadTableHelper:
         '''
 
         return merge_statement
+
+
