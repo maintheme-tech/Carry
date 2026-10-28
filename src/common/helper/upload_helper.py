@@ -48,7 +48,9 @@ class LoadTableHelper:
         self.hook.log_sql = True
 
     def gather_table_stats(self):
-        return ...
+        self.hook.run(sql=f'''
+            analyze {self.target_schema}.{self.target_table}
+        ''')
 
     def check_empty_source(self):
         
@@ -65,6 +67,7 @@ class LoadTableHelper:
     def get_columns_metadata(self):
 
         columns = ["column_name", "primary_key_flag", "on_match_update_flag"]
+        
         self.hook.log_sql = False
         records = (self.hook.get_records(f'''
             select {", ".join(columns)}
@@ -102,7 +105,6 @@ class LoadTableHelper:
             else f"TIMESTAMP '{self.as_of_day}'"
             for column_name in insert_fields
         )
-
 
         merge_statement = f'''
             MERGE INTO {self.target_schema}.{self.target_table} AS target
