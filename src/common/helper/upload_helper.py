@@ -67,7 +67,7 @@ class LoadTableHelper:
     def get_columns_metadata(self):
 
         columns = ["column_name", "primary_key_flag", "on_match_update_flag"]
-        
+
         self.hook.log_sql = False
         records = (self.hook.get_records(f'''
             select {", ".join(columns)}
@@ -120,4 +120,4 @@ class LoadTableHelper:
 
         return merge_statement
 
-
+    
