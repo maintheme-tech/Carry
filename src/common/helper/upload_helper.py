@@ -24,13 +24,13 @@ class LoadTableHelper:
     def drop_source_duplicates(self):
         columns_metadata = self.get_columns_metadata()
 
-
         target_keys = [d['column_name'] for d in columns_metadata if d['primary_key_flag']]
         merge_condition = "\n            AND ".join(
             f"target.{column_name} = source.{column_name}"
             for column_name in target_keys
         )
         target_keys = ", ".join(target_keys)
+
         self.logger.info(f'Obtained Source table keys: {target_keys}')
 
         self.hook.run(sql=f'''
@@ -51,7 +51,16 @@ class LoadTableHelper:
         return ...
 
     def check_empty_source(self):
-        return 0
+        
+        self.hook.log_sql = False
+        count = self.hook.get_first(sql=f'''
+            select count(*)
+            from {self.source_schema}.{self.source_table}
+        ''')
+        self.hook.log_sql = True
+
+        return count[0] == 0
+
 
     def get_columns_metadata(self):
 
