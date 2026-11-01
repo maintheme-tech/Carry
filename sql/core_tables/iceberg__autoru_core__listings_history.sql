@@ -27,9 +27,9 @@ CREATE OR REPLACE TABLE iceberg.autoru_core.listings_history (
     photo_urls          ARRAY(VARCHAR),
     badges              ARRAY(VARCHAR),
     valid_from          DATE, -- начало действия версии
-    valid_to            DATE, -- конец действия версии, NULL = открыта
-    active_flag         BOOLEAN,                     -- TRUE у текущей версии, FALSE у закрытой
-    value_day           DATE,                        -- = DATE(valid_from)
+    valid_to            DATE, -- конец действия версии
+    active_flag         BOOLEAN, -- TRUE у текущей версии, FALSE у закрытой
+    value_day           DATE,                        
     as_of_day           TIMESTAMP(0) WITH TIME ZONE,
     job_insert          BIGINT,
     job_update          BIGINT
