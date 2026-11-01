@@ -8,7 +8,6 @@ from airflow.providers.trino.hooks.trino import TrinoHook
 from common.upload.delta_loader import DeltaLoaderOperator
 from common.upload.core_loader import LoadCoreTableOperator
 
-local_tz = pendulum.timezone("Europe/Moscow")
 
 @dag(
     schedule=None,
@@ -16,7 +15,7 @@ local_tz = pendulum.timezone("Europe/Moscow")
     catchup=False,
     template_searchpath='/opt/airflow/include'
 )
-def dag_core_autoru_listings():
+def dag_autoru_core__actual_listings():
 
     trino = TrinoHook(trino_conn_id='Trino_connect')
 
@@ -64,4 +63,4 @@ def dag_core_autoru_listings():
 
     params >> load_delta >> upload_target
 
-dag_core_autoru_listings = dag_core_autoru_listings()
+dag_autoru_core__actual_listings = dag_autoru_core__actual_listings()
