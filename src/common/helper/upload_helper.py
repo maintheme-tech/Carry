@@ -81,8 +81,25 @@ class LoadTableHelper:
         self.hook.log_sql = True
 
         return [dict(zip(columns, record)) for record in records]
+
+    def generate_merge_statement(self, mode: str):
+        """
+        :param mode: 'core' — обычный upsert по PK
+                     'hist' — SCD2-мерж (закрытие старых версий + вставка новых)
+        """
+        generators = {
+            'core': self._generate_core_merge_statement,
+            'hist': self._generate_hist_merge_statement,
+        }
+
+        if mode not in generators:
+            raise ValueError(
+                f"Unknown load mode: {mode!r}. Expected one of: {list(generators)}"
+            )
+            
+        return generators[mode]()
     
-    def generate_merge_statement(self):
+    def _generate_core_merge_statement(self):
 
         columns_metadata = self.get_columns_metadata()
 
@@ -120,4 +137,5 @@ class LoadTableHelper:
 
         return merge_statement
 
-    
+    def _generate_hist_merge_statement(self):
+        return ...
