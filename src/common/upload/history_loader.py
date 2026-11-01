@@ -1,5 +1,3 @@
-import logging
-
 from common.helper.upload_helper import LoadTableHelper
 
 class LoadHistTableOperator(BaseOperator):
@@ -35,15 +33,27 @@ class LoadHistTableOperator(BaseOperator):
             p_as_of_day=self.as_of_day
         )
 
-        # step 1 obtain slice of new data
+        # step 1 obtain slice of fresh data
 
+        ### Slice of new data is obtained from delta table
 
         # step 2 fetch current slice of open entries from hist table
 
+        ### script_autoru_stg__proc_active_listings
+
         # step 3 define newly arrived data from new data and currently open entries
+
+        ### script_autoru_stg_proc_new_listings
 
         # step 4 define entries that must be deleted (marked so) from hist table
 
-        # step 5 define entries with updated attributes then cloase and reopen such rows
+        ### script_autoru_stg__proc_deleted_listings
+
+        # step 5 define entries with updated attributes then close and reopen such rows
+
+        rows_to_update = ...
 
         # step 6 merge data from previous steps into target table
+
+        merge_statement = helper.generate_merge_statement(mode='hist')
+        self.hook.run(sql=merge_statement)
