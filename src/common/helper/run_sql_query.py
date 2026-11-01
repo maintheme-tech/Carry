@@ -1,7 +1,7 @@
 from airflow.models import BaseOperator
 
 
-class RunSqlQueryOperator(BaseOperator):
+class RunSQLQueryOperator(BaseOperator):
 
     template_fields = ('sql_query_path',)
 

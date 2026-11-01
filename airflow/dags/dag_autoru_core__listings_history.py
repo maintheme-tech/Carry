@@ -6,7 +6,7 @@ from airflow.sdk import dag, task
 from airflow.providers.trino.hooks.trino import TrinoHook
 
 from common.upload.delta_loader import DeltaLoaderOperator
-from common.helper.run_sql_query import RunSqlQueryOperator
+from common.helper.run_sql_query import RunSQLQueryOperator
 
 
 @dag(
@@ -48,19 +48,19 @@ def dag_autoru_core__listings_history():
         p_gather_stats = True
     )
 
-    task_fill_proc_active_listings = RunSqlQueryOperator(
+    task_fill_proc_active_listings = RunSQLQueryOperator(
             task_id='task_fill_proc_active_listings',
             p_sql_query_path='script_autoru_stg__proc_active_listings.sql',
             p_hook=trino
     )
 
-    task_fill_proc_new_listings = RunSqlQueryOperator(
+    task_fill_proc_new_listings = RunSQLQueryOperator(
         task_id='task_fill_proc_new_listings',
         p_sql_query_path='script_autoru_stg__proc_new_listings.sql',
         p_hook=trino
     )
 
-    task_fill_proc_deleted_listings = RunSqlQueryOperator(
+    task_fill_proc_deleted_listings = RunSQLQueryOperator(
         task_id='task_fill_proc_deleted_listings',
         p_sql_query_path='script_autoru_stg__proc_deleted_listings.sql',
         p_hook=trino
