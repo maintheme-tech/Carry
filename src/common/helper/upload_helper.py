@@ -63,7 +63,6 @@ class LoadTableHelper:
 
         return count[0] == 0
 
-
     def get_columns_metadata(self):
 
         columns = ["column_name", "primary_key_flag", "on_match_update_flag"]
@@ -83,23 +82,6 @@ class LoadTableHelper:
         return [dict(zip(columns, record)) for record in records]
 
     def generate_merge_statement(self, mode: str):
-        """
-        :param mode: 'core' — обычный upsert по PK
-                     'hist' — SCD2-мерж (закрытие старых версий + вставка новых)
-        """
-        generators = {
-            'core': self._generate_core_merge_statement,
-            'hist': self._generate_hist_merge_statement,
-        }
-
-        if mode not in generators:
-            raise ValueError(
-                f"Unknown load mode: {mode!r}. Expected one of: {list(generators)}"
-            )
-            
-        return generators[mode]()
-    
-    def _generate_core_merge_statement(self):
 
         columns_metadata = self.get_columns_metadata()
 
@@ -116,18 +98,26 @@ class LoadTableHelper:
             f"{column_name} = source.{column_name}"
             for column_name in update_fields
         )
-        
+
         insert_values = ", ".join(
             f"source.{column_name}" if column_name != 'as_of_day' 
             else f"TIMESTAMP '{self.as_of_day}'"
             for column_name in insert_fields
         )
 
+        matched_diff = "\n                OR ".join(
+            f"target.{c} IS DISTINCT FROM source.{c}" for c in update_fields
+        ) or '0=1'
+        matched_diff = matched_diff if mode == 'hist' else '1=1'
+
         merge_statement = f'''
             MERGE INTO {self.target_schema}.{self.target_table} AS target
             USING {self.source_schema}.{self.source_table} AS source
             ON {merge_condition}
             WHEN MATCHED 
+                AND (
+                    {matched_diff}
+                )
                 THEN UPDATE
                     SET {match_update}
             WHEN NOT MATCHED
@@ -136,6 +126,3 @@ class LoadTableHelper:
         '''
 
         return merge_statement
-
-    def _generate_hist_merge_statement(self):
-        return ...
