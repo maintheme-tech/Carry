@@ -51,9 +51,15 @@ class LoadHistTableOperator(BaseOperator):
 
         # step 5 define entries with updated attributes then close and reopen such rows
 
-        rows_to_update = ...
+        # step 5.1
+        # there are 2 steps in updating current data, firstly there are rows that will be inserted
+        # during merge with updated attributes, new valid_from and 5999 valid_to
+        #step 5.2
+        # secondly, there are old records that will be updated in merge statement
+        # so theirs valid_to becomes valid_from of a new updated row, meaning that raw is closed.
+
+        ### script_autoru_stg__proc_updated_listings
 
         # step 6 merge data from previous steps into target table
-
         merge_statement = helper.generate_merge_statement(mode='hist')
         self.hook.run(sql=merge_statement)
