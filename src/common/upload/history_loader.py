@@ -1,3 +1,5 @@
+from airflow.models import BaseOperator
+
 from common.helper.upload_helper import LoadTableHelper
 
 class LoadHistTableOperator(BaseOperator):
