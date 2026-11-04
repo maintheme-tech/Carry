@@ -84,7 +84,7 @@ VALUES
     ('iceberg.autoru_core', 'listings_history', 'valid_from',         26,  'DATE',                         FALSE, FALSE, FALSE, TRUE, 'Начало действия версии (часть композитного PK)'),
     ('iceberg.autoru_core', 'listings_history', 'valid_to',           27,  'DATE',                         TRUE,  TRUE,  TRUE,  TRUE, 'Конец действия версии; NULL — запись открыта (partition key)'),
     ('iceberg.autoru_core', 'listings_history', 'active_flag',        28,  'BOOLEAN',                      FALSE, TRUE,  FALSE, TRUE, 'TRUE — текущая версия, FALSE — закрытая'),
-    ('iceberg.autoru_core', 'listings_history', 'value_day',          29,  'DATE',                         FALSE, FALSE, FALSE, TRUE, 'Дата актуальности записи (= DATE(valid_from))'),
+    ('iceberg.autoru_core', 'listings_history', 'value_day',          29,  'DATE',                         FALSE, TRUE, FALSE, TRUE, 'Дата актуальности записи (= DATE(valid_from))'),
     ('iceberg.autoru_core', 'listings_history', 'as_of_day',          30,  'TIMESTAMP(0) WITH TIME ZONE',  FALSE, FALSE, FALSE, TRUE, 'Дата и время вставки записи в хранилище'),
     ('iceberg.autoru_core', 'listings_history', 'job_insert',         31,  'BIGINT',                       FALSE, FALSE, FALSE, TRUE, 'Run ID DAG, впервые вставившего запись'),
     ('iceberg.autoru_core', 'listings_history', 'job_update',         32,  'BIGINT',                       FALSE, TRUE,  FALSE, TRUE, 'Run ID DAG, последним обновившего запись (для закрытой — момент закрытия)');
