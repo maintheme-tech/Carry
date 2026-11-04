@@ -1,7 +1,37 @@
 DROP TABLE IF EXISTS iceberg.autoru_stg.proc_active_listings;
-
 CREATE TABLE iceberg.autoru_stg.proc_active_listings AS (
-    select *
+    select  lh.auto_ru_id,
+            lh.url,
+            lh.model_title,
+            lh.year,
+            lh.mileage,
+            lh.price,
+            lh.engine_volume,
+            lh.power_hp,
+            lh.power_kw,
+            lh.fuel,
+            lh.body_type,
+            lh.drive,
+            lh.transmission,
+            lh.sale_status,
+            lh.color,
+            lh.complectation,
+            lh.seller,
+            lh.seller_profile_url,
+            lh.seller_verified,
+            lh.seller_rating,
+            lh.seller_region,
+            lh.seller_address,
+            lh.photo_count,
+            lh.photo_urls,
+            lh.badges,
+            lh.valid_from,
+            lh.valid_to,
+            lh.active_flag,
+            lh.value_day,
+            lh.as_of_day,
+            lh.job_insert,
+            lh.job_update
     from iceberg.autoru_core.listings_history lh
     where lh.valid_to = DATE '5999-01-01'
 );
