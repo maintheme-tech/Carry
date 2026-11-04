@@ -7,6 +7,7 @@ from airflow.providers.trino.hooks.trino import TrinoHook
 
 from common.upload.delta_loader import DeltaLoaderOperator
 from common.helper.run_sql_query import RunSQLQueryOperator
+from common.upload.history_loader import LoadHistTableOperator
 
 
 @dag(
@@ -66,6 +67,29 @@ def dag_autoru_core__listings_history():
         p_hook=trino
     )
 
-    params >> [load_delta, task_fill_proc_active_listings] >> task_fill_proc_new_listings >> task_fill_proc_deleted_listings
+    task_fill_proc_updated_listings = RunSQLQueryOperator(
+        task_id='task_fill_proc_updated_listings',
+        p_sql_query_path='script_autoru_stg__proc_updated_listings.sql',
+        p_hook=trino
+    )
+
+    task_fill_proc_batch_listings = RunSQLQueryOperator(
+        task_id='task_fill_proc_batch_listings',
+        p_sql_query_path='script_autoru_stg__proc_batch_listings.sql',
+        p_hook=trino
+    )
+
+    upload_target = LoadHistTableOperator(
+        task_id='upload_target',
+        p_hook=trino,
+        p_source_schema='iceberg.autoru_stg',
+        p_source_table='proc_batch_listings',
+        p_target_schema='iceberg.autoru_core',
+        p_target_table='listings_history',
+        p_as_of_day=pendulum.now('Europe/Moscow').start_of('second')
+    )
+
+
+    params >> [load_delta, task_fill_proc_active_listings] >> task_fill_proc_new_listings >> task_fill_proc_deleted_listings >> task_fill_proc_updated_listings >> task_fill_proc_batch_listings >> upload_target
 
 dag_autoru_core__listings_history = dag_autoru_core__listings_history()
