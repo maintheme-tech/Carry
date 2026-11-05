@@ -17,14 +17,14 @@ class LoadHistTableOperator(BaseOperator):
         **kwargs
     ):
         super().__init__(**kwargs)
-        self.hook = p_hook,
+        self.hook = p_hook
         self.source_schema = p_source_schema
         self.source_table = p_source_table
         self.target_schema = p_target_schema
         self.target_table = p_target_table
         self.as_of_day = p_as_of_day
 
-    def execute(self):
+    def execute(self, context):
 
         helper = LoadTableHelper(
             p_hook=self.hook,

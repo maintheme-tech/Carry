@@ -105,7 +105,7 @@ class LoadTableHelper:
             for column_name in insert_fields
         )
 
-        matched_diff = "\n                OR ".join(
+        matched_diff = "\n                    OR ".join(
             f"target.{c} IS DISTINCT FROM source.{c}" for c in update_fields
         ) or '0=1'
         matched_diff = matched_diff if mode == 'hist' else '1=1'
