@@ -35,7 +35,7 @@ create table iceberg.autoru_stg.proc_updated_listings as (
     from iceberg.autoru_stg.stg_autoru_listings sl
     join iceberg.autoru_stg.proc_active_listings pl
       on sl.auto_ru_id = pl.auto_ru_id
-    where sl.hashed_columns != pl.hashed_values
+    where sl.hashdiff_key != pl.hashdiff_key
 );
 
 drop table if exists iceberg.autoru_stg.proc_closed_listings;
@@ -75,5 +75,5 @@ create table iceberg.autoru_stg.proc_closed_listings as (
     from iceberg.autoru_stg.stg_autoru_listings sl
     join iceberg.autoru_stg.proc_active_listings pl
       on sl.auto_ru_id = pl.auto_ru_id
-    where sl.hashed_columns != pl.hashed_values
+    where sl.hashdiff_key != pl.hashdiff_key
 );
