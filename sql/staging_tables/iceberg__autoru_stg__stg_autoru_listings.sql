@@ -28,7 +28,8 @@ CREATE OR REPLACE TABLE iceberg.autoru_stg.stg_autoru_listings (
     value_day           DATE,
     as_of_day           TIMESTAMP(0) WITH TIME ZONE,
     job_insert          BIGINT,
-    job_update          BIGINT
+    job_update          BIGINT,
+    hashdiff_key        VARCHAR
 )
 WITH (
     format = 'PARQUET'
