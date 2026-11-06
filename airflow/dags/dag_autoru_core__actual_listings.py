@@ -4,18 +4,29 @@ from datetime import datetime
 
 from airflow.sdk import dag, task
 from airflow.providers.trino.hooks.trino import TrinoHook
+from airflow.providers.standard.operators.trigger_dagrun import TriggerDagRunOperator
+from airflow.providers.standard.sensors.external_task import ExternalTaskSensor
 
 from common.upload.delta_loader import DeltaLoaderOperator
 from common.upload.core_loader import LoadCoreTableOperator
 
 
 @dag(
-    schedule=None,
+    schedule='@daily',
     start_date=datetime(2026, 10, 15),
     catchup=False,
     template_searchpath='/opt/airflow/include'
 )
 def dag_autoru_core__actual_listings():
+
+    sensor__dag_ndjson_to_parquet_daily = ExternalTaskSensor(
+        task_id='sensor__dag_ndjson_to_parquet_daily',
+        external_dag_id='dag_ndjson_to_parquet_daily',
+        external_task_id='sync_partitions',
+        poke_interval=5*60,
+        timeout=4*60*60,
+        mode='reschedule'
+    )
 
     trino = TrinoHook(trino_conn_id='Trino_connect')
 
@@ -60,7 +71,12 @@ def dag_autoru_core__actual_listings():
         p_gather_stats=True
     )
 
+    trigger__dag_autoru_core__listings_history = TriggerDagRunOperator(
+        task_id="trigger__dag_autoru_core__listings_history",
+        trigger_dag_id="dag_autoru_core__listings_history"
+    )
 
-    params >> load_delta >> upload_target
+
+    sensor__dag_ndjson_to_parquet_daily >> params >> load_delta >> upload_target >> trigger__dag_autoru_core__listings_history
 
 dag_autoru_core__actual_listings = dag_autoru_core__actual_listings()
