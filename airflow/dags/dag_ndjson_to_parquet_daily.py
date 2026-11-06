@@ -5,13 +5,14 @@ from datetime import datetime, timedelta
 from airflow.sdk import dag, task
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 from airflow.providers.trino.hooks.trino import TrinoHook
+from airflow.providers.standard.operators.trigger_dagrun import TriggerDagRunOperator
 
 from convert import ndjson_to_parquet
 
 local_tz = pendulum.timezone("Europe/Moscow")
 
 @dag(
-    schedule=None, #'@daily', 
+    schedule='@daily', 
     start_date=pendulum.datetime(2026, 10, 13, 0, 3, tz=local_tz),
     catchup=False,
 )
