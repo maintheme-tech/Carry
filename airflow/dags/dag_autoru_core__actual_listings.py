@@ -65,7 +65,7 @@ def dag_autoru_core__actual_listings():
         p_source_schema='iceberg.autoru_stg',
         p_source_table='stg_autoru_listings',
         p_target_schema='iceberg.autoru_core',
-        p_target_table='core_autoru_actual_listings',
+        p_target_table='actual_listings',
         p_as_of_day=pendulum.now('Europe/Moscow').start_of('second'),
         p_drop_duplicates=True,
         p_gather_stats=True
