@@ -34,15 +34,20 @@ class LoadTableHelper:
         self.logger.info(f'Obtained Source table keys: {target_keys}')
 
         self.hook.run(sql=f'''
-        MERGE INTO {self.source_schema}.{self.source_table} AS target
-        USING (
-            SELECT {target_keys},
-                ROW_NUMBER() OVER (PARTITION BY {target_keys}) AS rn
-            FROM {self.source_schema}.{self.source_table}
-        ) AS source
-        ON {merge_condition}
-        AND source.rn > 1
-        WHEN MATCHED THEN DELETE
+        DELETE FROM {self.source_schema}.{self.source_table}
+        WHERE ({target_keys}) IN (
+            SELECT {target_keys}
+            FROM (
+                SELECT
+                    {target_keys},
+                    ROW_NUMBER() OVER (
+                        PARTITION BY {target_keys}
+                        ORDER BY as_of_day DESC
+                    ) AS rn
+                FROM {self.source_schema}.{self.source_table}
+            )
+            WHERE rn > 1
+        );
         ''')
 
         self.hook.log_sql = True
