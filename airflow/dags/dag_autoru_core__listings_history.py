@@ -45,7 +45,7 @@ def dag_autoru_core__listings_history():
         p_value_day = params['value_day'],
         p_as_of_day = pendulum.now('Europe/Moscow').start_of('second'),
         p_job_id = params['job_id'],
-        p_drop_duplicates = False,
+        p_drop_duplicates = True,
         p_gather_stats = True
     )
 
