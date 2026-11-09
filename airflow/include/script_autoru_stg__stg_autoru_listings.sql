@@ -60,8 +60,11 @@ WITH src AS (
         photo_urls,
         badges,
         value_day
-    FROM {self.source_schema}.{self.source_table}
-    WHERE value_day = DATE '{self.value_day}'
+    FROM (
+        SELECT DISTINCT *
+        FROM {self.source_schema}.{self.source_table}
+        WHERE value_day = DATE '{self.value_day}'
+    ) raw
 )
 SELECT
     auto_ru_id,
