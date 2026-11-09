@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from airflow.sdk import dag, task, get_current_context
+from airflow.sdk import dag, task
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 
 from parse import parse_listings
@@ -16,9 +16,7 @@ def dag_process_collected_pages():
     s3 = S3Hook(aws_conn_id="Silo_S3_connect")
 
     @task
-    def get_file_paths():
-
-        context = get_current_context()
+    def get_file_paths(**context):
 
         files = s3.list_keys(
             bucket_name="data",
@@ -28,9 +26,8 @@ def dag_process_collected_pages():
         return files
         
     @task
-    def transform_page(file_path):
+    def transform_page(file_path, **context):
 
-        context = get_current_context()
         params = context["dag_run"].conf["params"]
         run_number = context["dag_run"].logical_date.strftime("%Y%m%d%H%M%S")
 
