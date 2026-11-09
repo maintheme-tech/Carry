@@ -12,3 +12,5 @@ create table iceberg.autoru_stg.proc_batch_listings as (
     select *
     from iceberg.autoru_stg.proc_closed_listings
 );
+
+analyze iceberg.autoru_stg.proc_batch_listings;

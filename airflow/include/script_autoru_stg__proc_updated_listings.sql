@@ -37,6 +37,7 @@ create table iceberg.autoru_stg.proc_updated_listings as (
       on sl.auto_ru_id = pl.auto_ru_id
     where sl.hashdiff_key != pl.hashdiff_key
 );
+analyze iceberg.autoru_stg.proc_updated_listings;
 
 drop table if exists iceberg.autoru_stg.proc_closed_listings;
 create table iceberg.autoru_stg.proc_closed_listings as (
@@ -77,3 +78,4 @@ create table iceberg.autoru_stg.proc_closed_listings as (
       on sl.auto_ru_id = pl.auto_ru_id
     where sl.hashdiff_key != pl.hashdiff_key
 );
+analyze iceberg.autoru_stg.proc_closed_listings;

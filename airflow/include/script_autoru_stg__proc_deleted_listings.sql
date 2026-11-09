@@ -42,3 +42,5 @@ create table iceberg.autoru_stg.proc_deleted_listings as (
     ) cj
     where sl.auto_ru_id is null
 );
+
+analyze iceberg.autoru_stg.proc_deleted_listings;

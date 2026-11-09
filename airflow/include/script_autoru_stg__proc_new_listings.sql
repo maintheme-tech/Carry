@@ -37,3 +37,5 @@ CREATE TABLE iceberg.autoru_stg.proc_new_listings AS (
       on sl.auto_ru_id = pl.auto_ru_id
     where pl.auto_ru_id is null
 );
+
+analyze iceberg.autoru_stg.proc_new_listings;
