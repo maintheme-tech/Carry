@@ -1,4 +1,5 @@
 from airflow.models import BaseOperator
+from airflow.exceptions import AirflowException
 
 from common.helper.upload_helper import LoadTableHelper
 
@@ -61,6 +62,19 @@ class LoadHistTableOperator(BaseOperator):
         # so theirs valid_to becomes valid_from of a new updated row, meaning that raw is closed.
 
         ### script_autoru_stg__proc_updated_listings
+
+        duplicates = self.hook.get_records("""
+            SELECT auto_ru_id, valid_to, COUNT(*) AS row_count
+            FROM iceberg.autoru_stg.proc_batch_listings
+            GROUP BY auto_ru_id, valid_to
+            HAVING COUNT(*) > 1
+            LIMIT 20
+        """)
+
+        if duplicates:
+            raise AirflowException(
+                f"Duplicate history merge keys in proc_batch_listings: {duplicates}"
+            )
 
         # step 6 merge data from previous steps into target table
         merge_statement = helper.generate_merge_statement(mode='hist')
