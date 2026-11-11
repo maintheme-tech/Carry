@@ -76,7 +76,16 @@ def dag_autoru_core__actual_listings():
         trigger_dag_id="dag_autoru_core__listings_history"
     )
 
+    trigger__dag_clickhouse__autoru_analytics = TriggerDagRunOperator(
+        task_id="trigger__dag_clickhouse__autoru_analytics",
+        trigger_dag_id="dag_clickhouse__autoru_analytics",
+        conf={"snapshot_date": params["value_day"]},
+    )
 
-    sensor__dag_ndjson_to_parquet_daily >> params >> load_delta >> upload_target >> trigger__dag_autoru_core__listings_history
+    sensor__dag_ndjson_to_parquet_daily >> params >> load_delta >> upload_target
+    upload_target >> [
+        trigger__dag_autoru_core__listings_history,
+        trigger__dag_clickhouse__autoru_analytics,
+    ]
 
 dag_autoru_core__actual_listings = dag_autoru_core__actual_listings()
